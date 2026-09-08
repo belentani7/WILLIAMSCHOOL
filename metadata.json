@@ -1,0 +1,7 @@
+{
+  "name": "Belentani School - Plataforma ESO y Tutoría Cultural",
+  "description": "Plataforma educativa integral de 4 años de ESO + 2 de extensión para William Danilo (14 años, Brasil). Refuerzo en Matemáticas, Español, Catalán e Inglés, tutor de acogida cultural, arcade de videojuegos educativos de Belentani en glassmorphism rojo y tutor IA con voz humana.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Glassmorphism Rojo & Liquid Light Utilities */
+.glass-red {
+  background: linear-gradient(135deg, rgba(255, 45, 85, 0.12) 0%, rgba(20, 2, 6, 0.65) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 75, 110, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(200, 16, 46, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.glass-red-card {
+  background: linear-gradient(145deg, rgba(255, 45, 85, 0.09) 0%, rgba(30, 4, 10, 0.8) 50%, rgba(16, 1, 4, 0.95) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 85, 120, 0.22);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+
+.glass-red-glow {
+  box-shadow: 0 0 25px rgba(255, 45, 85, 0.4), inset 0 0 15px rgba(255, 45, 85, 0.2);
+}
+
+.glossy-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.glossy-sheen::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.08) 35%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0.08) 65%,
+    transparent 80%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+  animation: liquid-sheen 6s infinite ease-in-out;
+}
+
+@keyframes liquid-sheen {
+  0% { transform: translate(-80%, -80%) rotate(25deg); }
+  50% { transform: translate(30%, 30%) rotate(25deg); }
+  100% { transform: translate(120%, 120%) rotate(25deg); }
+}
+
+@keyframes float-pulse {
+  0%, 100% { transform: translateY(0px) scale(1); filter: drop-shadow(0 0 15px rgba(255,45,85,0.4)); }
+  50% { transform: translateY(-5px) scale(1.01); filter: drop-shadow(0 0 30px rgba(255,45,85,0.7)); }
+}
+
+.animate-float-pulse {
+  animation: float-pulse 4s ease-in-out infinite;
+}
+
+/* Custom Red Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #150205;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff2d55;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6b8b;
+}
+
