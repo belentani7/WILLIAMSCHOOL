@@ -1,0 +1,84 @@
+{
+  "tema": "textos-por-asignatura",
+  "portal": "williamschool",
+  "registros": [
+    {
+      "fuente": "OpenStax",
+      "spec": "openstax:matemat",
+      "ok": true,
+      "datos": [
+        {
+          "titulo": "Additive Manufacturing Essentials",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "Algebra 1",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "Algebra and Trigonometry",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "Algebra and Trigonometry 2e",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "American Government",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "American Government 2e",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "American Government 3e",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "American Government 4e",
+          "url": "https://openstax.org/details/books/None"
+        }
+      ]
+    },
+    {
+      "fuente": "OpenStax",
+      "spec": "openstax:history",
+      "ok": true,
+      "datos": [
+        {
+          "titulo": "Additive Manufacturing Essentials",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "Algebra 1",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "Algebra and Trigonometry",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "Algebra and Trigonometry 2e",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "American Government",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "American Government 2e",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "American Government 3e",
+          "url": "https://openstax.org/details/books/None"
+        },
+        {
+          "titulo": "American Government 4e",
+          "url": "https://openstax.org/details/books/None"
+        }
+      ]
+    }
+  ]
+}

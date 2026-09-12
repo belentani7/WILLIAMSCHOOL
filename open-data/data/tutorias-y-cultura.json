@@ -1,0 +1,16 @@
+{
+  "tema": "tutorias-y-cultura",
+  "portal": "williamschool",
+  "registros": [
+    {
+      "fuente": "Wikipedia ES",
+      "spec": "wiki:es:Educación secundaria obligatoria",
+      "ok": true,
+      "datos": {
+        "titulo": "Educación Secundaria Obligatoria",
+        "resumen": "La Educación Secundaria Obligatoria (ESO) es un sistema educativo español de enseñanza secundaria que comenzó su implantación progresiva en el curso 1995-1996 y que tiene como objetivo preparar a los alumnos de entre doce y dieciséis años para sus próximos estudios o el mundo laboral. Se cursa en los institutos de Educación Secundaria (IES), en los centros o colegios de Enseñanza Obligatoria (CEO) o bien en centros privados y concertados. Entre las modificaciones más recientes, se encuentran la LOE de mayo de 2006 y la LOMLOE de 2020.",
+        "url": "https://es.wikipedia.org/wiki/Educaci%C3%B3n_Secundaria_Obligatoria"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "portal": "williamschool",
+  "repo": "belentani7/WILLIAMSCHOOL",
+  "dominio": "ESO, tutoria cultural y refuerzo",
+  "generado_utc": "2026-09-12T21:23:56+00:00",
+  "orden_idiomas": [
+    "pt",
+    "es",
+    "en",
+    "ca"
+  ],
+  "fuentes": [
+    {
+      "tema": "textos-por-asignatura",
+      "fuente": "OpenStax",
+      "spec": "openstax:matemat",
+      "ok": true
+    },
+    {
+      "tema": "textos-por-asignatura",
+      "fuente": "OpenStax",
+      "spec": "openstax:history",
+      "ok": true
+    },
+    {
+      "tema": "tutorias-y-cultura",
+      "fuente": "Wikipedia ES",
+      "spec": "wiki:es:Educación secundaria obligatoria",
+      "ok": true
+    },
+    {
+      "tema": "lecturas-obligatorias",
+      "fuente": "Open Library",
+      "spec": "openlibrary:young adult",
+      "ok": true
+    }
+  ],
+  "temas": [
+    {
+      "tema": "textos-por-asignatura",
+      "fuentes_ok": 2,
+      "fuentes_total": 2
+    },
+    {
+      "tema": "tutorias-y-cultura",
+      "fuentes_ok": 1,
+      "fuentes_total": 1
+    },
+    {
+      "tema": "lecturas-obligatorias",
+      "fuentes_ok": 1,
+      "fuentes_total": 1
+    }
+  ]
+}

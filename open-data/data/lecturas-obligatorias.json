@@ -1,0 +1,38 @@
+{
+  "tema": "lecturas-obligatorias",
+  "portal": "williamschool",
+  "registros": [
+    {
+      "fuente": "Open Library",
+      "spec": "openlibrary:young adult",
+      "ok": true,
+      "datos": [
+        {
+          "titulo": "Man's Search for Meaning adapted for Young Adults [adaptation]",
+          "autor": "Viktor E. Frankl",
+          "anio": 2017
+        },
+        {
+          "titulo": "Sunshine",
+          "autor": "Robin McKinley",
+          "anio": 2003
+        },
+        {
+          "titulo": "Seedfolks",
+          "autor": "Paul Fleischman",
+          "anio": 1997
+        },
+        {
+          "titulo": "Men of Iron",
+          "autor": "Howard Pyle",
+          "anio": 1891
+        },
+        {
+          "titulo": "You Should See Me in a Crown",
+          "autor": "Leah Johnson",
+          "anio": 2020
+        }
+      ]
+    }
+  ]
+}
