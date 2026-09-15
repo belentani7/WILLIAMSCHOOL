@@ -2,7 +2,7 @@
   "portal": "williamschool",
   "repo": "belentani7/WILLIAMSCHOOL",
   "dominio": "ESO, tutoria cultural y refuerzo",
-  "generado_utc": "2026-09-12T22:15:00+00:00",
+  "generado_utc": "2026-09-15T14:35:44+00:00",
   "orden_idiomas": [
     "pt",
     "es",
@@ -33,6 +33,36 @@
       "fuente": "Open Library",
       "spec": "openlibrary:young adult",
       "ok": true
+    },
+    {
+      "tema": "refuerzo-idiomas",
+      "fuente": "Tatoeba EN",
+      "spec": "tatoeba:eng:school",
+      "ok": true
+    },
+    {
+      "tema": "refuerzo-idiomas",
+      "fuente": "Wiktionary ES",
+      "spec": "wikt_es:escuela",
+      "ok": true
+    },
+    {
+      "tema": "ciencia-natural",
+      "fuente": "GBIF",
+      "spec": "gbif:animales",
+      "ok": true
+    },
+    {
+      "tema": "ciencia-natural",
+      "fuente": "PubMed",
+      "spec": "pubmed:adolescent health",
+      "ok": true
+    },
+    {
+      "tema": "datos-del-mundo",
+      "fuente": "REST Countries",
+      "spec": "restcountries",
+      "ok": true
     }
   ],
   "temas": [
@@ -48,6 +78,21 @@
     },
     {
       "tema": "lecturas-obligatorias",
+      "fuentes_ok": 1,
+      "fuentes_total": 1
+    },
+    {
+      "tema": "refuerzo-idiomas",
+      "fuentes_ok": 2,
+      "fuentes_total": 2
+    },
+    {
+      "tema": "ciencia-natural",
+      "fuentes_ok": 2,
+      "fuentes_total": 2
+    },
+    {
+      "tema": "datos-del-mundo",
       "fuentes_ok": 1,
       "fuentes_total": 1
     }

@@ -1,0 +1,75 @@
+{
+  "tema": "ciencia-natural",
+  "portal": "williamschool",
+  "registros": [
+    {
+      "fuente": "GBIF",
+      "spec": "gbif:animales",
+      "ok": true,
+      "datos": [
+        {
+          "nombre": "Anoplotherium Cuvier 1804",
+          "rango": "GENUS",
+          "clave": 264902989,
+          "url": "https://www.gbif.org/species/264902989"
+        },
+        {
+          "nombre": "Slatterites Spath, 1923",
+          "rango": "GENUS",
+          "clave": 182169287,
+          "url": "https://www.gbif.org/species/182169287"
+        },
+        {
+          "nombre": "Paracymbites Spath, 1925",
+          "rango": "GENUS",
+          "clave": 182169284,
+          "url": "https://www.gbif.org/species/182169284"
+        },
+        {
+          "nombre": "Dioscorea L.",
+          "rango": "GENUS",
+          "clave": 159684592,
+          "url": "https://www.gbif.org/species/159684592"
+        },
+        {
+          "nombre": "Paroxynoticeras Pia, 1914",
+          "rango": "GENUS",
+          "clave": 182169282,
+          "url": "https://www.gbif.org/species/182169282"
+        }
+      ]
+    },
+    {
+      "fuente": "PubMed",
+      "spec": "pubmed:adolescent health",
+      "ok": true,
+      "datos": [
+        {
+          "titulo": "Condom negotiation among adolescent mothers in a resource-constrained setting: a COM-B analysis with implications for sexual and reproductive health.",
+          "revista": "AIDS care",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42740652/"
+        },
+        {
+          "titulo": "Quality of Online Information for Management of Leg Pain in Children and Adolescents With Hypermobility-Associated Conditions.",
+          "revista": "Journal of paediatrics and child health",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42740515/"
+        },
+        {
+          "titulo": "It's Not Just a Joke: The Association Between Ambiguous Perceived Hostility and Depressive Symptoms in Adolescent Bullying Victims.",
+          "revista": "Psychological reports",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42740493/"
+        },
+        {
+          "titulo": "InsightRP2-An Interdisciplinary Approach Toward Therapy Development in RP2-Associated Retinopathy.",
+          "revista": "Human gene therapy",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42740453/"
+        },
+        {
+          "titulo": "Benefits of Four-Tiered Classification of Exercise-Induced Left Ventricular Hypertrophy in Adolescent Athletes.",
+          "revista": "Journal of clinical medicine",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42739882/"
+        }
+      ]
+    }
+  ]
+}

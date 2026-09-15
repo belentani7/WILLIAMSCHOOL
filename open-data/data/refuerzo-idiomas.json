@@ -1,0 +1,64 @@
+{
+  "tema": "refuerzo-idiomas",
+  "portal": "williamschool",
+  "registros": [
+    {
+      "fuente": "Tatoeba EN",
+      "spec": "tatoeba:eng:school",
+      "ok": true,
+      "datos": [
+        {
+          "origen": "School ended.",
+          "traduccion": "انتهت الدراسة."
+        },
+        {
+          "origen": "Waarom school?",
+          "traduccion": "Wozu Schule?"
+        },
+        {
+          "origen": "School sucks!",
+          "traduccion": "Aɣerbaz d asṭeẓṭeẓ!"
+        },
+        {
+          "origen": "School rebua.",
+          "traduccion": "We are in school."
+        },
+        {
+          "origen": "School tanań.",
+          "traduccion": "I'm a student."
+        },
+        {
+          "origen": "School sucks.",
+          "traduccion": "Aɣerbaz d asṭeẓṭeẓ."
+        }
+      ]
+    },
+    {
+      "fuente": "Wiktionary ES",
+      "spec": "wikt_es:escuela",
+      "ok": true,
+      "datos": [
+        {
+          "titulo": "escuela",
+          "fragmento": "está localizado dicho instituto o se imparte la enseñanza. escuela normal Derivados: escuela, escolar, escolaridad, escolarizar, escolarización, escolapio"
+        },
+        {
+          "titulo": "escuela normal",
+          "fragmento": "escuela normal (copulativa) ¦ plural: escuelas normales 1 Enseñanza Institución que forma a los maestros de la enseñanza primaria o básica. Wikipedia tiene"
+        },
+        {
+          "titulo": "бага сургууль",
+          "fragmento": "De бага (bajo) + сургууль (escuela, colegio). 1 Escuela primaria, escuela de educación básica."
+        },
+        {
+          "titulo": "escuelas",
+          "fragmento": "1 Forma del plural de escuela. 2 Segunda persona del singular (tú) del presente de indicativo de escolar. Para más información sobre las convenciones"
+        },
+        {
+          "titulo": "eskola",
+          "fragmento": " Entradas similares:  Eskola Del español escuela, y este del latín schola. 1 Educación Escuela. Sinónimo: ikastetxe. Wikipedia en vasco tiene un artículo"
+        }
+      ]
+    }
+  ]
+}
