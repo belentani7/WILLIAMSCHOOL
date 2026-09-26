@@ -24,8 +24,8 @@ jobs:
           node-version: 20
       - name: Instalar dependencias
         run: npm install --no-audit --no-fund
-      - name: Build
-        run: npm run build
+      - name: Build (base relativa para Pages subpath)
+        run: npx vite build --base=./ --outDir=dist --emptyOutDir || npm run build
         env:
           NODE_ENV: production
       - name: SPA fallback (404 -> index)
