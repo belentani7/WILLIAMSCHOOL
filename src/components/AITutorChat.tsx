@@ -133,7 +133,7 @@ export const AITutorChat: React.FC = () => {
         <div className="glass-red p-6 rounded-3xl text-center space-y-4">
           <div className="relative inline-block mx-auto">
             <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-[#ff2d55] shadow-[0_0_35px_rgba(255,45,85,0.6)] p-0.5 bg-gradient-to-br from-[#ff2d55] to-[#300]">
-              <img src="/assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover rounded-full" />
+              <img src="./assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover rounded-full" />
             </div>
             <span className="absolute bottom-0 right-1 px-2 py-0.5 rounded-full bg-emerald-500 text-black text-[9px] font-black uppercase">
               Online
@@ -221,7 +221,7 @@ export const AITutorChat: React.FC = () => {
               >
                 {!isMe && (
                   <div className="w-9 h-9 rounded-xl overflow-hidden border border-[#ff2d55] shrink-0">
-                    <img src="/assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover" />
+                    <img src="./assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover" />
                   </div>
                 )}
 
@@ -262,7 +262,7 @@ export const AITutorChat: React.FC = () => {
           {loading && (
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl overflow-hidden border border-[#ff2d55]">
-                <img src="/assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover animate-pulse" />
+                <img src="./assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover animate-pulse" />
               </div>
               <div className="p-3.5 rounded-2xl bg-black/40 border border-white/10 text-xs text-[#ff8fa3] flex items-center gap-2">
                 <RefreshCw className="w-3.5 h-3.5 animate-spin" />

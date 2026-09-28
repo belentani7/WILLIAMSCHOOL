@@ -134,7 +134,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center gap-3 cursor-pointer group" onClick={handleVoiceGreeting}>
             <div className="w-11 h-11 rounded-xl overflow-hidden border border-white/20 shadow-md p-0.5 bg-gradient-to-br from-blue-600 via-sky-500 to-slate-700">
               <img 
-                src="/assets/belentani.jpg" 
+                src="./assets/belentani.jpg" 
                 alt="Belentani Guerrero y Cantante" 
                 className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform"
                 onError={(e) => {

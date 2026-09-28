@@ -105,7 +105,7 @@ export const ArcadeCenter: React.FC = () => {
           <div className="glass-red p-6 md:p-8 rounded-3xl relative overflow-hidden border border-[#ff2d55]/30">
             <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-35 md:opacity-50 pointer-events-none overflow-hidden">
               <img 
-                src="/assets/belentani_stage.jpg" 
+                src="./assets/belentani_stage.jpg" 
                 alt="Belentani Stage" 
                 className="w-full h-full object-cover object-center mix-blend-screen"
                 onError={(e) => { (e.target as HTMLElement).style.display = 'none'; }}
@@ -627,7 +627,7 @@ const RhythmGame: React.FC<{ onScore: (pts: number) => void }> = ({ onScore }) =
       {/* Belentani Singer Avatar */}
       <div className="flex flex-col items-center justify-center py-2">
         <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#ff2d55] shadow-[0_0_30px_rgba(255,45,85,0.6)] animate-float-pulse">
-          <img src="/assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover" />
+          <img src="./assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover" />
         </div>
         <div className="text-sm font-bold text-white mt-2">
           🎶 Belentani Canta: <span className="text-[#ff8fa3]">"{currentWords[wordIndex % currentWords.length]}"</span>
@@ -743,7 +743,7 @@ const MathCombatGame: React.FC<{ onScore: (pts: number) => void }> = ({ onScore 
         {/* Belentani Warrior Side */}
         <div className="flex items-center gap-3">
           <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-[#ff2d55] shadow-[0_0_20px_rgba(255,45,85,0.4)]">
-            <img src="/assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover" />
+            <img src="./assets/belentani.jpg" alt="Belentani" className="w-full h-full object-cover" />
           </div>
           <div>
             <div className="text-sm font-black text-white">BELENTANI</div>
@@ -887,7 +887,7 @@ const SyntaxRunnerGame: React.FC<{ onScore: (pts: number) => void }> = ({ onScor
         >
           <span className="text-[10px] text-zinc-400">CENTRO</span>
           <div className="w-12 h-12 rounded-full overflow-hidden border border-[#ff2d55] animate-bounce">
-            <img src="/assets/belentani.jpg" alt="Runner" className="w-full h-full object-cover" />
+            <img src="./assets/belentani.jpg" alt="Runner" className="w-full h-full object-cover" />
           </div>
           <span className="text-[10px] text-zinc-400">Belentani</span>
         </div>
