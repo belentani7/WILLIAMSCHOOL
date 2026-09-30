@@ -1,23 +1,32 @@
 # WILLIAMSCHOOL
 
-WILLIAMSCHOOL
+Escuela digital comunitaria: curriculo de Nepal adaptado, diseno institucional y acceso abierto.
+
+## Que es
+
+Una plataforma educativa para una comunidad escolar. El curriculo base procede de Nepal y se
+adapta a un formato digital, con una identidad visual institucional sobria.
+
+En linea: <https://williamschool.vercel.app>
 
 ## Stack
 
-- Primary language: TypeScript
-- Node project (`package.json` present)
+- **Vite + TypeScript** - aplicacion
+- **Bun** - gestor de paquetes
+- **GitHub Pages / Vercel** - despliegue
 
-## Getting started
+## Detalle tecnico importante
+
+El sitio vive en un subpath (`/WILLIAMSCHOOL/`). Por eso `vite.config.ts` usa **base relativa**
+y las rutas de assets son `./assets`, no `/assets`. Cambiar eso rompe las imagenes en Pages.
+
+## Puesta en marcha
 
 ```bash
-git clone https://github.com/belentani7/WILLIAMSCHOOL.git
+bun install
+bun run dev
 ```
 
-```bash
-npm install
-npm run dev
-```
+## Licencia
 
----
-
-License: not specified
+MIT - ver `LICENSE`.
