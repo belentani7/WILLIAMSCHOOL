@@ -18,7 +18,7 @@ que cursa ESO en Catalunya. Cubre:
 - **Compañero Belentani**: personaje de IA con **portugués como idioma principal**, que se
   declara a sí mismo como personaje y acompaña en todas las pantallas.
 
-En línea: <https://williamschool.vercel.app>
+En línea: <https://williamschool-livid.vercel.app>
 
 ## Stack
 
@@ -79,7 +79,7 @@ vive en el nodo central:
 |---|---|---|
 | Open School | Instituto digital universal | https://open-school-gamma.vercel.app |
 | ManosAbiertas | IA y ofimática para recién llegados | https://belentani7.github.io/ManosAbiertas/ |
-| WILLIAMSCHOOL | Estudio ESO/Bachillerato + acogida BR-ES | https://williamschool.vercel.app |
+| WILLIAMSCHOOL | Estudio ESO/Bachillerato + acogida BR-ES | https://williamschool-livid.vercel.app |
 | UX Academy | Diseño UX/Producto, trilingüe | https://ux-academy-professional.vercel.app |
 | Aprende Brasil | Educação para o Brasil | https://aprende-brasil.vercel.app/ |
 | Lingua Aberta | Idiomas, progresión CEFR | https://belentani7.github.io/lingua-aberta-empresa/ |

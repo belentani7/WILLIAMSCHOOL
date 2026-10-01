@@ -81,7 +81,7 @@ export const CAMPUS_MODULES: CampusModule[] = [
     description:
       'Esta misma app: plan ESO/Bachillerato, 365 clases diarias, catálogo de 500 minijuegos, falsos amigos PT-ES y bancos open data.',
     sourceRepo: 'belentani7/WILLIAMSCHOOL',
-    liveUrl: 'https://williamschool.vercel.app',
+    liveUrl: 'https://williamschool-livid.vercel.app',
     integration: 'embedded',
     metrics: [
       { label: 'Clases', value: '365' },
