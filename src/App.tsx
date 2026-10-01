@@ -15,7 +15,9 @@ import { JsonBankExplorer } from './components/JsonBankExplorer';
 import { SuperpowerAuditoria } from './components/SuperpowerAuditoria';
 import { EduOfficeSuite } from './components/EduOfficeSuite';
 import { EduTube } from './components/EduTube';
+import { CampusHub } from './components/CampusHub';
 import { VoiceStudioModal } from './components/VoiceStudioModal';
+import { CompanionPresence } from './components/CompanionPresence';
 import { playSoundSuccess } from './utils/speech';
 import { Eye, ShieldCheck, Heart, Sparkles, Volume2, Monitor } from 'lucide-react';
 
@@ -95,6 +97,8 @@ export default function App() {
         )}
 
         {/* Tab View Switching */}
+        {currentTab === 'campus' && <CampusHub />}
+
         {currentTab === 'academic' && <AcademicPlan />}
 
         {currentTab === 'office' && <EduOfficeSuite />}
@@ -124,6 +128,9 @@ export default function App() {
         isOpen={isVoiceStudioOpen}
         onClose={() => setIsVoiceStudioOpen(false)}
       />
+
+      {/* Companheiro "consciencia entre aspas": presente em TODAS as telas */}
+      <CompanionPresence activeTab={currentTab} />
 
       {/* Windows 11 / Aero Bottom Taskbar & Status Footer */}
       <footer className="w-full border-t border-slate-300/80 bg-white/80 backdrop-blur-md py-3 px-4 sm:px-6 mt-auto text-slate-600 shadow-inner">

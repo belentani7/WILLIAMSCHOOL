@@ -47,6 +47,7 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   const navItems: { id: NavigationTab; label: string; icon: string }[] = [
+    { id: 'campus', label: 'Campus Unificado', icon: '🏫' },
     { id: 'academic', label: 'Plan ESO (1º a 2º Bach)', icon: '🎓' },
     { id: 'office', label: 'EduOffice Pack', icon: '💼' },
     { id: 'edutube', label: 'EduTube Aula', icon: '📺' },

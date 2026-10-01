@@ -1,0 +1,133 @@
+{
+  "repo": "open-school",
+  "generatedAt": "2026-10-01T16:19:46.304Z",
+  "datasets": [
+    {
+      "id": "catalog__LEVELS",
+      "label": "LEVELS",
+      "kind": "array",
+      "count": 5,
+      "file": "catalog__LEVELS.json"
+    },
+    {
+      "id": "catalog__ROUTES",
+      "label": "ROUTES",
+      "kind": "array",
+      "count": 6,
+      "file": "catalog__ROUTES.json"
+    },
+    {
+      "id": "catalog__STATUS_LABEL",
+      "label": "STATUS LABEL",
+      "kind": "object",
+      "count": 3,
+      "file": "catalog__STATUS_LABEL.json"
+    },
+    {
+      "id": "catalog__TOTALS",
+      "label": "TOTALS",
+      "kind": "object",
+      "count": 6,
+      "file": "catalog__TOTALS.json"
+    },
+    {
+      "id": "biblia__AMBIGUOS",
+      "label": "AMBIGUOS",
+      "kind": "object",
+      "count": 2,
+      "file": "biblia__AMBIGUOS.json"
+    },
+    {
+      "id": "biblia__CATEGORIAS",
+      "label": "CATEGORIAS",
+      "kind": "array",
+      "count": 13,
+      "file": "biblia__CATEGORIAS.json"
+    },
+    {
+      "id": "biblia__CURSO",
+      "label": "CURSO",
+      "kind": "object",
+      "count": 81,
+      "file": "biblia__CURSO.json"
+    },
+    {
+      "id": "biblia__RECUENTO",
+      "label": "RECUENTO",
+      "kind": "object",
+      "count": 0,
+      "file": "biblia__RECUENTO.json"
+    },
+    {
+      "id": "biblia__TODOS",
+      "label": "TODOS",
+      "kind": "array",
+      "count": 219,
+      "file": "biblia__TODOS.json"
+    },
+    {
+      "id": "open-data__topics",
+      "label": "Open Data · Temas",
+      "kind": "object",
+      "count": 7,
+      "file": "open-data__topics.json"
+    },
+    {
+      "id": "open-data__ciencia",
+      "label": "Open Data · Ciencia y actualidad",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__ciencia.json"
+    },
+    {
+      "id": "open-data__datos",
+      "label": "Open Data · Datos educativos",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__datos.json"
+    },
+    {
+      "id": "open-data__investigacion",
+      "label": "Open Data · Investigación escolar",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__investigacion.json"
+    },
+    {
+      "id": "open-data__lecturas",
+      "label": "Open Data · Lecturas",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__lecturas.json"
+    },
+    {
+      "id": "open-data__libros",
+      "label": "Open Data · Libros libres",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__libros.json"
+    },
+    {
+      "id": "open-data__textos",
+      "label": "Open Data · Textos por asignatura",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__textos.json"
+    },
+    {
+      "id": "capsulas",
+      "label": "Cápsulas diarias",
+      "kind": "array",
+      "count": 23,
+      "file": "capsulas.json"
+    },
+    {
+      "id": "quiz-ciberseguridad",
+      "label": "Quiz · Ciberseguridad",
+      "kind": "array",
+      "count": 3,
+      "file": "quiz-ciberseguridad.json"
+    }
+  ],
+  "skipped": []
+}

@@ -68,7 +68,7 @@ export const ParentalShield: React.FC<ParentalShieldProps> = ({
 
           <div className="flex items-center gap-2 px-4 py-2 rounded-2xl bg-emerald-950/40 border border-emerald-500/40 text-emerald-300 text-xs font-bold">
             <CheckCircle2 className="w-4 h-4" />
-            <span>Entorno 100% Protegido</span>
+            <span>Controles de protección activos</span>
           </div>
         </div>
       </div>

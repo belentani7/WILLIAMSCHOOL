@@ -41,10 +41,10 @@ cursos en `campus/cursos/<slug>/`. Cada curso tiene 20 semanas, `quiz.json`,
 fusionar repositorios, hay que reconocer que ya comparten motor y llevar los cursos
 al mismo sitio.
 
-### 2. La escuela de Nepal  `WILLIAMSCHOOL`
+### 2. Belentani School (ESO/Bachillerato)  `WILLIAMSCHOOL`
 
-49 ficheros. No usa el motor `campus/`: es una aplicacion con `server.ts` (Bun) y un
-directorio `open-data/` con el curriculo en JSON:
+No usa el motor `campus/`: es una aplicacion con `server.ts` (Express + tsx) y un
+directorio `open-data/` con contenido en JSON:
 
 - `open-data/data/ciencia-natural.json`
 - `open-data/data/datos-del-mundo.json`
@@ -52,8 +52,9 @@ directorio `open-data/` con el curriculo en JSON:
 - `open-data/data/refuerzo-idiomas.json`
 - `open-data/data/textos-por-asignatura.json`
 
-Es el unico con curriculo de Nepal. **No es duplicado de nada.** Su valor esta en el
-contenido, no en el motor, y `open-data/` se puede leer desde cualquier otro campus.
+Es el unico con backend Express propio en marcha, suite de ofimatica y videos
+educativos verificados. Su valor esta en el contenido, no en el motor, y `open-data/`
+se puede leer desde cualquier otro campus.
 
 ### 3. La escuela unificada  `belentani-school-unificado`
 
@@ -79,7 +80,7 @@ todos los README citan como central.
 
 - `ManosAbiertas` tiene **1.215 ficheros**, el triple que cualquier otro. Es el que mas
   contenido real aporta; fusionarlo en otro seria perder material.
-- `WILLIAMSCHOOL` aporta el curriculo de Nepal, que no existe en ningun otro sitio.
+- `WILLIAMSCHOOL` aporta el plan ESO/Bachillerato, la ofimatica y los videos verificados.
 - `aprende-brasil` es el unico con backend propio funcional.
 
 ## Estado de cada uno

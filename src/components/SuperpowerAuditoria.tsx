@@ -39,7 +39,7 @@ export const SuperpowerAuditoria: React.FC = () => {
       setIsAuditing(false);
       playSoundSuccess();
       confetti();
-      speakBelentani("Auditoría pedagógica integral completada. Todas las competencias curriculares y módulos de William Danilo han sido auditados con calificación sobresaliente.", { lang: 'es' });
+      speakBelentani("Revisión de autoevaluación completada. Recuerda: estos números son orientativos y los confirma tu profesor, no una auditoría oficial.", { lang: 'es' });
     }, 1200);
   };
 
@@ -48,10 +48,10 @@ export const SuperpowerAuditoria: React.FC = () => {
     playSoundClick();
 
     setTimeout(() => {
-      setRepairStatus("✅ Todos los 500 minijuegos, módulos LOMLOE y síntesis de voz han sido reindexados con éxito.");
+      setRepairStatus("ℹ️ Reindexado local de módulos y voces completado. Esto no cambia tus notas.");
       playSoundSuccess();
       confetti();
-      speakBelentani("Reparación y calibración técnica completada. Los 500 juegos y todo el contenido están al cien por cien.", { lang: 'es' });
+      speakBelentani("Reindexado técnico local completado. Tus notas siguen dependiendo de tu trabajo y de tu profesor, no de esta pantalla.", { lang: 'es' });
     }, 1500);
   };
 
@@ -75,8 +75,14 @@ export const SuperpowerAuditoria: React.FC = () => {
               Centro de Auditoría Curricular & Corrección
             </h2>
             <p className="text-xs md:text-sm text-zinc-300 max-w-3xl leading-relaxed">
-              Auditoría pedagógica de los 4 cursos de ESO + 2 de Bachillerato, corrector inteligente de textos para William Danilo y verificación de salud de los 500 minijuegos clásicos.
+              Corrector inteligente de textos para William Danilo, panel de autoevaluación de los 4 cursos
+              de ESO + 2 de Bachillerato y diagnóstico de salud de los minijuegos clásicos.
             </p>
+            <div className="mt-3 max-w-3xl rounded-xl border border-amber-400/30 bg-amber-500/10 px-3 py-2 text-[11px] leading-snug text-amber-200">
+              <strong>Nota de honestidad:</strong> los porcentajes y notas que aparecen aquí son valores
+              orientativos de ejemplo (autoevaluación), no calificaciones oficiales ni una auditoría externa.
+              Un tutor o profesor debe confirmarlos.
+            </div>
           </div>
 
           <div className="flex items-center gap-3">

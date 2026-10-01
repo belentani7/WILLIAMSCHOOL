@@ -1,0 +1,133 @@
+{
+  "repo": "manos-abiertas",
+  "generatedAt": "2026-10-01T16:19:46.381Z",
+  "datasets": [
+    {
+      "id": "aiCurriculumData__AI_LESSONS",
+      "label": "AI LESSONS",
+      "kind": "array",
+      "count": 26,
+      "file": "aiCurriculumData__AI_LESSONS.json"
+    },
+    {
+      "id": "aiCurriculumData__AI_MODULES_OVERVIEW",
+      "label": "AI MODULES OVERVIEW",
+      "kind": "array",
+      "count": 8,
+      "file": "aiCurriculumData__AI_MODULES_OVERVIEW.json"
+    },
+    {
+      "id": "nodesMetadata__NODES_LIST",
+      "label": "NODES LIST",
+      "kind": "array",
+      "count": 15,
+      "file": "nodesMetadata__NODES_LIST.json"
+    },
+    {
+      "id": "educationData__EDUCATION_AREAS",
+      "label": "EDUCATION AREAS",
+      "kind": "array",
+      "count": 6,
+      "file": "educationData__EDUCATION_AREAS.json"
+    },
+    {
+      "id": "educationData__EDUCATION_COURSES",
+      "label": "EDUCATION COURSES",
+      "kind": "array",
+      "count": 5,
+      "file": "educationData__EDUCATION_COURSES.json"
+    },
+    {
+      "id": "officeData__OFFICE_MODULES",
+      "label": "OFFICE MODULES",
+      "kind": "array",
+      "count": 6,
+      "file": "officeData__OFFICE_MODULES.json"
+    },
+    {
+      "id": "academicData__ACADEMIC_COURSES",
+      "label": "ACADEMIC COURSES",
+      "kind": "array",
+      "count": 6,
+      "file": "academicData__ACADEMIC_COURSES.json"
+    },
+    {
+      "id": "careerData__CAREER_TRACKS",
+      "label": "CAREER TRACKS",
+      "kind": "array",
+      "count": 4,
+      "file": "careerData__CAREER_TRACKS.json"
+    },
+    {
+      "id": "legalRightsData__LEGAL_ARTICLES",
+      "label": "LEGAL ARTICLES",
+      "kind": "array",
+      "count": 7,
+      "file": "legalRightsData__LEGAL_ARTICLES.json"
+    },
+    {
+      "id": "financeHousingData__FINANCIAL_GUIDES",
+      "label": "FINANCIAL GUIDES",
+      "kind": "array",
+      "count": 4,
+      "file": "financeHousingData__FINANCIAL_GUIDES.json"
+    },
+    {
+      "id": "financeHousingData__HOUSING_GUIDES",
+      "label": "HOUSING GUIDES",
+      "kind": "array",
+      "count": 2,
+      "file": "financeHousingData__HOUSING_GUIDES.json"
+    },
+    {
+      "id": "resourcesData__RESOURCES_LIST",
+      "label": "RESOURCES LIST",
+      "kind": "array",
+      "count": 20,
+      "file": "resourcesData__RESOURCES_LIST.json"
+    },
+    {
+      "id": "helpData__EMERGENCY_CONTACTS",
+      "label": "EMERGENCY CONTACTS",
+      "kind": "array",
+      "count": 6,
+      "file": "helpData__EMERGENCY_CONTACTS.json"
+    },
+    {
+      "id": "helpData__HELP_FAQS",
+      "label": "HELP FAQS",
+      "kind": "array",
+      "count": 6,
+      "file": "helpData__HELP_FAQS.json"
+    },
+    {
+      "id": "communityData__ASSOCIATIONS_DIRECTORY",
+      "label": "ASSOCIATIONS DIRECTORY",
+      "kind": "array",
+      "count": 9,
+      "file": "communityData__ASSOCIATIONS_DIRECTORY.json"
+    },
+    {
+      "id": "communityData__COMMUNITY_EVENTS",
+      "label": "COMMUNITY EVENTS",
+      "kind": "array",
+      "count": 3,
+      "file": "communityData__COMMUNITY_EVENTS.json"
+    },
+    {
+      "id": "deleExamData__DELE_LEVELS",
+      "label": "DELE LEVELS",
+      "kind": "array",
+      "count": 3,
+      "file": "deleExamData__DELE_LEVELS.json"
+    },
+    {
+      "id": "deleExamData__DELE_QUESTIONS_A2",
+      "label": "DELE QUESTIONS A2",
+      "kind": "array",
+      "count": 11,
+      "file": "deleExamData__DELE_QUESTIONS_A2.json"
+    }
+  ],
+  "skipped": []
+}

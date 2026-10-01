@@ -1,0 +1,100 @@
+[
+  {
+    "abrev": "CI/CD",
+    "curso": "manos-abiertas",
+    "nombre": "Continuous Integration / Continuous Delivery",
+    "significado": "Integración continua y entrega continua como cadena.",
+    "categoria": "TÉRMINOS FUNDAMENTALES"
+  },
+  {
+    "abrev": "ERD",
+    "curso": "manos-abiertas",
+    "nombre": "Entity-Relationship Diagram",
+    "significado": "Diagrama entidad-relación.",
+    "categoria": "DOCUMENTOS TÉCNICOS"
+  },
+  {
+    "abrev": "IaC",
+    "curso": "manos-abiertas",
+    "nombre": "Infrastructure as Code",
+    "significado": "Infraestructura definida como código.",
+    "categoria": "INFRAESTRUCTURA"
+  },
+  {
+    "abrev": "Docker",
+    "curso": "manos-abiertas",
+    "nombre": "Docker",
+    "significado": "Plataforma de contenedores.",
+    "categoria": "INFRAESTRUCTURA"
+  },
+  {
+    "abrev": "Terraform",
+    "curso": "manos-abiertas",
+    "nombre": "Terraform",
+    "significado": "Infraestructura como código declarativa.",
+    "categoria": "INFRAESTRUCTURA"
+  },
+  {
+    "abrev": "SQL",
+    "curso": "manos-abiertas",
+    "nombre": "Structured Query Language",
+    "significado": "Lenguaje de consulta estructurado.",
+    "categoria": "BASES DE DATOS"
+  },
+  {
+    "abrev": "NoSQL",
+    "curso": "manos-abiertas",
+    "nombre": "Not Only SQL",
+    "significado": "Bases no relacionales.",
+    "categoria": "BASES DE DATOS"
+  },
+  {
+    "abrev": "RDBMS",
+    "curso": "manos-abiertas",
+    "nombre": "Relational Database Management System",
+    "significado": "Sistema gestor de bases relacionales.",
+    "categoria": "BASES DE DATOS"
+  },
+  {
+    "abrev": "ORM",
+    "curso": "manos-abiertas",
+    "nombre": "Object-Relational Mapping",
+    "significado": "Mapeo objeto-relacional.",
+    "categoria": "BASES DE DATOS"
+  },
+  {
+    "abrev": "ACID",
+    "curso": "manos-abiertas",
+    "nombre": "Atomicity, Consistency, Isolation, Durability",
+    "significado": "Propiedades de una transacción fiable.",
+    "categoria": "BASES DE DATOS"
+  },
+  {
+    "abrev": "CRUD",
+    "curso": "manos-abiertas",
+    "nombre": "Create, Read, Update, Delete",
+    "significado": "Las cuatro operaciones básicas.",
+    "categoria": "BASES DE DATOS"
+  },
+  {
+    "abrev": "Agile",
+    "curso": "manos-abiertas",
+    "nombre": "Agile",
+    "significado": "Metodología ágil e iterativa.",
+    "categoria": "METODOLOGÍAS"
+  },
+  {
+    "abrev": "Scrum",
+    "curso": "manos-abiertas",
+    "nombre": "Scrum",
+    "significado": "Marco ágil con sprints y roles definidos.",
+    "categoria": "METODOLOGÍAS"
+  },
+  {
+    "abrev": "Kanban",
+    "curso": "manos-abiertas",
+    "nombre": "Kanban",
+    "significado": "Flujo visual con límite de trabajo en curso.",
+    "categoria": "METODOLOGÍAS"
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "repo": "belentani",
+  "generatedAt": "2026-10-01T16:19:46.610Z",
+  "datasets": [
+    {
+      "id": "curriculumData__ACADEMIC_MODULES",
+      "label": "ACADEMIC MODULES",
+      "kind": "array",
+      "count": 14,
+      "file": "curriculumData__ACADEMIC_MODULES.json"
+    },
+    {
+      "id": "curriculumData__CULTURAL_GUIDES",
+      "label": "CULTURAL GUIDES",
+      "kind": "array",
+      "count": 6,
+      "file": "curriculumData__CULTURAL_GUIDES.json"
+    },
+    {
+      "id": "curriculumData__EDUTUBE_VIDEOS",
+      "label": "EDUTUBE VIDEOS",
+      "kind": "array",
+      "count": 5,
+      "file": "curriculumData__EDUTUBE_VIDEOS.json"
+    },
+    {
+      "id": "curriculumData__FALSE_FRIENDS",
+      "label": "FALSE FRIENDS",
+      "kind": "array",
+      "count": 16,
+      "file": "curriculumData__FALSE_FRIENDS.json"
+    },
+    {
+      "id": "curriculumData__GAMES_CATALOG",
+      "label": "GAMES CATALOG",
+      "kind": "array",
+      "count": 10,
+      "file": "curriculumData__GAMES_CATALOG.json"
+    },
+    {
+      "id": "classes365Days__ALL_365_CLASSES",
+      "label": "ALL 365 CLASSES",
+      "kind": "array",
+      "count": 365,
+      "file": "classes365Days__ALL_365_CLASSES.json"
+    },
+    {
+      "id": "omegaCourseraPythonHub__GLOBAL_OPEN_DATA_BANKS",
+      "label": "GLOBAL OPEN DATA BANKS",
+      "kind": "array",
+      "count": 4,
+      "file": "omegaCourseraPythonHub__GLOBAL_OPEN_DATA_BANKS.json"
+    },
+    {
+      "id": "omegaCourseraPythonHub__OMEGA_COURSE_TRACKS",
+      "label": "OMEGA COURSE TRACKS",
+      "kind": "array",
+      "count": 3,
+      "file": "omegaCourseraPythonHub__OMEGA_COURSE_TRACKS.json"
+    },
+    {
+      "id": "miniGames500Data__MINI_GAMES_500_CATALOG",
+      "label": "MINI GAMES 500 CATALOG",
+      "kind": "array",
+      "count": 500,
+      "file": "miniGames500Data__MINI_GAMES_500_CATALOG.json"
+    },
+    {
+      "id": "miniGames500Data__MINI_GAME_CATEGORIES",
+      "label": "MINI GAME CATEGORIES",
+      "kind": "array",
+      "count": 10,
+      "file": "miniGames500Data__MINI_GAME_CATEGORIES.json"
+    },
+    {
+      "id": "open-data__topics",
+      "label": "Open Data · Temas",
+      "kind": "object",
+      "count": 7,
+      "file": "open-data__topics.json"
+    },
+    {
+      "id": "open-data__ciencia",
+      "label": "Open Data · Ciencia natural",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__ciencia.json"
+    },
+    {
+      "id": "open-data__mundo",
+      "label": "Open Data · Datos del mundo",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__mundo.json"
+    },
+    {
+      "id": "open-data__lecturas",
+      "label": "Open Data · Lecturas",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__lecturas.json"
+    },
+    {
+      "id": "open-data__idiomas",
+      "label": "Open Data · Refuerzo idiomas",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__idiomas.json"
+    },
+    {
+      "id": "open-data__textos",
+      "label": "Open Data · Textos por asignatura",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__textos.json"
+    },
+    {
+      "id": "open-data__tutorias",
+      "label": "Open Data · Tutorías y cultura",
+      "kind": "object",
+      "count": 3,
+      "file": "open-data__tutorias.json"
+    }
+  ],
+  "skipped": []
+}

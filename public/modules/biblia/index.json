@@ -1,0 +1,59 @@
+{
+  "repo": "biblia",
+  "source": "open-school/docs/BIBLIA_TERMINOS_DESARROLLO.md -> client/src/lib/biblia.ts",
+  "generatedAt": "2026-10-01T16:28:36.013Z",
+  "total": 673,
+  "categorias": 23,
+  "datasets": [
+    {
+      "id": "todos",
+      "label": "Todos los términos (673)",
+      "kind": "array",
+      "count": 673,
+      "file": "todos.json"
+    },
+    {
+      "id": "plataforma-agent-systems",
+      "label": "Conceptos de agent-systems",
+      "kind": "array",
+      "count": 14,
+      "file": "plataforma-agent-systems.json"
+    },
+    {
+      "id": "plataforma-creative-tech",
+      "label": "Conceptos de creative-tech",
+      "kind": "array",
+      "count": 4,
+      "file": "plataforma-creative-tech.json"
+    },
+    {
+      "id": "plataforma-lingua-aberta",
+      "label": "Conceptos de lingua-aberta",
+      "kind": "array",
+      "count": 4,
+      "file": "plataforma-lingua-aberta.json"
+    },
+    {
+      "id": "plataforma-manos-abiertas",
+      "label": "Conceptos de manos-abiertas",
+      "kind": "array",
+      "count": 14,
+      "file": "plataforma-manos-abiertas.json"
+    },
+    {
+      "id": "plataforma-secure-t",
+      "label": "Conceptos de secure-t",
+      "kind": "array",
+      "count": 30,
+      "file": "plataforma-secure-t.json"
+    },
+    {
+      "id": "plataforma-ux-academy",
+      "label": "Conceptos de ux-academy",
+      "kind": "array",
+      "count": 17,
+      "file": "plataforma-ux-academy.json"
+    }
+  ],
+  "skipped": []
+}
