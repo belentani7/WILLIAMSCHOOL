@@ -21,6 +21,16 @@ Cada dato vive en un unico lugar (single source of truth). No duplicar contenido
 entre archivos. La documentacion vive en `docs/` y se actualiza en el mismo PR
 que el cambio (Spec-Code Convergence).
 
+### Biblia (glosario tecnico)
+
+La Biblia **no se edita aqui**. Fuente unica:
+`../open-school/docs/BIBLIA_TERMINOS_DESARROLLO.md` → alli `npm run build:biblia`.
+Para publicar en este campus: `npx tsx scripts/export-biblia.mts`
+(escribe `public/modules/biblia/`). No inventar un segundo glosario.
+
+Prioridad William (2026-10-02): `open-school` + `belentani-school-unificado`.
+Fuera de alcance: `nataliamarinho`, `secure-t`. Luego: ManosAbiertas, UX Academy.
+
 ## Seguridad
 
 - Sin secretos en git (claves, tokens, endpoints privados). Usar variables de entorno.
