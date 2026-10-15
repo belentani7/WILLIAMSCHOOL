@@ -1,0 +1,1726 @@
+{
+  "source": "YouTube search (lista blanca de canales) + oEmbed",
+  "generatedAtUtc": "2026-10-01T16:06:15.282Z",
+  "disclaimer": "Solo canales educativos de confianza. Cada video fue verificado contra el oEmbed de YouTube al generarse. YouTube puede retirar videos: si uno deja de cargar, reejecuta este script.",
+  "count": 127,
+  "allowlist": [
+    "khan academy",
+    "khanacademy",
+    "3blue1brown",
+    "crashcourse",
+    "crash course",
+    "amoeba sisters",
+    "math antics",
+    "mathantics",
+    "bbc learning english",
+    "freecodecamp",
+    "píldoras informáticas",
+    "pildorasinformaticas",
+    "curso em vídeo",
+    "curso em video",
+    "unicoos",
+    "derivando",
+    "quantumfracture",
+    "cdeciencia",
+    "kurzgesagt",
+    "ted-ed",
+    "teded",
+    "ted ",
+    "mit opencourseware",
+    "mitopencourseware",
+    "oversimplified",
+    "simple history",
+    "openstax",
+    "date un vlog",
+    "date un voltio",
+    "la cuna de halicarnaso",
+    "academia play",
+    "julio profe",
+    "julioprofe",
+    "profe alex",
+    "matemáticas profe",
+    "el profesor de mates",
+    "aprende con ",
+    "aula365",
+    "smile and learn",
+    "català",
+    "3cat",
+    "edu365",
+    "wall street english",
+    "aprendamos",
+    "tutor",
+    "el traductor de ingeniería",
+    "eduCaixa",
+    "educaixa",
+    "felix",
+    "profesor",
+    "academia",
+    "clases",
+    "lecciones",
+    "educación",
+    "education",
+    "ciencia",
+    "física",
+    "química",
+    "matemática",
+    "historia",
+    "filosofía",
+    "programación",
+    "informática",
+    "ofimática",
+    "seguridad"
+  ],
+  "videos": [
+    {
+      "id": "a0Rbh25rL9g",
+      "title": "👨‍👩‍👧‍👦 CURS DE CATALÀ A1 |  La FAMÍLIA en català | Vocabulari bàsic per a principiants",
+      "channel": "Parlem d'escriure en català",
+      "subject": "Català",
+      "course": "2º-3º ESO",
+      "topics": [
+        "català per a castellanoparlants vocabulari"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/a0Rbh25rL9g/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=a0Rbh25rL9g",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/a0Rbh25rL9g"
+    },
+    {
+      "id": "IBlkHRJCAxk",
+      "title": "CATALAN PAST TENSES - (Subtitles: Eng, Esp, Cat)",
+      "channel": "Català al Natural",
+      "subject": "Català",
+      "course": "3º ESO",
+      "topics": [
+        "passat perifràstic català explicació"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/IBlkHRJCAxk/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=IBlkHRJCAxk",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/IBlkHRJCAxk"
+    },
+    {
+      "id": "tuH_UpJkONU",
+      "title": "CONSTRUCCIONS AMB EL VERB ANAR - Passat, present o futur? (Subtitles: Eng, Esp, Cat)",
+      "channel": "Català al Natural",
+      "subject": "Català",
+      "course": "3º ESO",
+      "topics": [
+        "passat perifràstic català explicació"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/tuH_UpJkONU/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=tuH_UpJkONU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/tuH_UpJkONU"
+    },
+    {
+      "id": "6FLjvqBsbt4",
+      "title": "El col·legi: Episodi 1 - Vocabulari per a nens en català",
+      "channel": "Smile and Learn - Català",
+      "subject": "Català",
+      "course": "2º-3º ESO",
+      "topics": [
+        "català per a castellanoparlants vocabulari"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/6FLjvqBsbt4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=6FLjvqBsbt4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/6FLjvqBsbt4"
+    },
+    {
+      "id": "toj2AUseOf4",
+      "title": "Top 40 castellanismes, i les alternatives en català | OK CATALÀ | 4K",
+      "channel": "OK CATALÀ",
+      "subject": "Català",
+      "course": "2º-3º ESO",
+      "topics": [
+        "català per a castellanoparlants vocabulari"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/toj2AUseOf4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=toj2AUseOf4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/toj2AUseOf4"
+    },
+    {
+      "id": "jQf2bR_t7eA",
+      "title": "Verb estar en catala; present, passat i fufur",
+      "channel": "Profe de Català",
+      "subject": "Català",
+      "course": "3º ESO",
+      "topics": [
+        "passat perifràstic català explicació"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/jQf2bR_t7eA/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=jQf2bR_t7eA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/jQf2bR_t7eA"
+    },
+    {
+      "id": "boQKl5BkPfs",
+      "title": "Ciberseguridad: Contraseñas seguras",
+      "channel": "AltumX Educación",
+      "subject": "Ciberseguridad",
+      "course": "Secure-T",
+      "topics": [
+        "contraseñas seguras cómo crear"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/boQKl5BkPfs/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=boQKl5BkPfs",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/boQKl5BkPfs"
+    },
+    {
+      "id": "6wCQr-YXWmA",
+      "title": "Cómo Crear una Contraseña Segura y Fácil de Recordar",
+      "channel": "Programación Fácil ,SEO y Marketing",
+      "subject": "Ciberseguridad",
+      "course": "Secure-T",
+      "topics": [
+        "contraseñas seguras cómo crear"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/6wCQr-YXWmA/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=6wCQr-YXWmA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/6wCQr-YXWmA"
+    },
+    {
+      "id": "rHDTJQKW2y8",
+      "title": "Privacidad online para niños - Protección y seguridad en internet para niños",
+      "channel": "Smile and Learn - Español",
+      "subject": "Ciberseguridad",
+      "course": "Secure-T",
+      "topics": [
+        "seguridad en redes wifi públicas"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/rHDTJQKW2y8/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=rHDTJQKW2y8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/rHDTJQKW2y8"
+    },
+    {
+      "id": "POeuXk1UXHo",
+      "title": "Protege tu red en 5 sencillos pasos",
+      "channel": "Oficina de Seguridad del Internauta",
+      "subject": "Ciberseguridad",
+      "course": "Secure-T",
+      "topics": [
+        "seguridad en redes wifi públicas"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/POeuXk1UXHo/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=POeuXk1UXHo",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/POeuXk1UXHo"
+    },
+    {
+      "id": "DNrGtfKHkCc",
+      "title": "¿Qué pasa cuando pisas un LEGO?: Sistema nervioso y sistema endócrino: Crash Course Biología #46",
+      "channel": "Crash Course en Español",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "sistema nervioso y endocrino ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/DNrGtfKHkCc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=DNrGtfKHkCc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/DNrGtfKHkCc"
+    },
+    {
+      "id": "wl_HCBxpBs0",
+      "title": "⚖️ BALANCEO de ecuaciones por TANTEO [Fácil y Rápido] | QUÍMICA |",
+      "channel": "A Cierta Ciencia",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "reacciones químicas ajuste"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/wl_HCBxpBs0/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=wl_HCBxpBs0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/wl_HCBxpBs0"
+    },
+    {
+      "id": "I5Q3XIx5sxw",
+      "title": "🌏 La TEORÍA de la TECTÓNICA de PLACAS | Biología y geología",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "tectónica de placas terremotos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/I5Q3XIx5sxw/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=I5Q3XIx5sxw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/I5Q3XIx5sxw"
+    },
+    {
+      "id": "d2DB-kWxg-w",
+      "title": "🌿Fotosíntesis | Fase Luminosa y Oscura | Ciclo de Calvin🌞 [Fácil y Rápido] | BIOLOGÍA |",
+      "channel": "A Cierta Ciencia",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "fotosíntesis explicación sencilla"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/d2DB-kWxg-w/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=d2DB-kWxg-w",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/d2DB-kWxg-w"
+    },
+    {
+      "id": "yjyStvnHWXg",
+      "title": "🍎 Las Leyes de Newton 🚗 con EJEMPLOS  [Fácil y Rápido] | FÍSICA |",
+      "channel": "A Cierta Ciencia",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "leyes de Newton explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/yjyStvnHWXg/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=yjyStvnHWXg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/yjyStvnHWXg"
+    },
+    {
+      "id": "ZuboRhWHo9I",
+      "title": "🏅EL SISTEMA INMUNE, INMUNOLOGICO O INMUNITARIO LINFOCITOS B, T, AUXILIARES, ASESINOS, TOXICOS.",
+      "channel": "ARRIBA LA CIENCIA",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "sistema inmunitario defensas ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ZuboRhWHo9I/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=ZuboRhWHo9I",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ZuboRhWHo9I"
+    },
+    {
+      "id": "bsWqliD04VI",
+      "title": "👨‍🔬 La PRIMERA LEY de NEWTON | Explicación, Fórmulas y Ejercicios",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "leyes de Newton explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/bsWqliD04VI/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=bsWqliD04VI",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/bsWqliD04VI"
+    },
+    {
+      "id": "-XklyypVml4",
+      "title": "👨‍🔬 TIPOS de ENLACES QUÍMICOS | COVALENTE, IÓNICO y METÁLICO",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "estructura atómica y enlace químico"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/-XklyypVml4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=-XklyypVml4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/-XklyypVml4"
+    },
+    {
+      "id": "9Oljha_Syv8",
+      "title": "💫 ¿Qué es enlace químico? Tipos de enlace: Iónico, Covalente, Metálico💫 [Fácil y Rápido] | QUÍMICA |",
+      "channel": "A Cierta Ciencia",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "estructura atómica y enlace químico"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/9Oljha_Syv8/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=9Oljha_Syv8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/9Oljha_Syv8"
+    },
+    {
+      "id": "WizhhiGlofE",
+      "title": "🔴 AJUSTAR o BALANCEAR REACCIONES QUÍMICAS por TANTEO",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "reacciones químicas ajuste"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/WizhhiGlofE/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=WizhhiGlofE",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/WizhhiGlofE"
+    },
+    {
+      "id": "wc3scVd1JYI",
+      "title": "🔴 MRU MOVIMIENTO RECTILÍNEO UNIFORME | 🚗 Explicación fórmulas y ejercicios",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Ciencias",
+      "course": "1º Bach",
+      "topics": [
+        "cinemática MRU MRUA explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/wc3scVd1JYI/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=wc3scVd1JYI",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/wc3scVd1JYI"
+    },
+    {
+      "id": "oPrXErLylxA",
+      "title": "🔴 QUÉ es el ÁTOMO | Química | ESTRUCTURA ATÓMICA",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "estructura atómica y enlace químico"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/oPrXErLylxA/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=oPrXErLylxA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/oPrXErLylxA"
+    },
+    {
+      "id": "fuXb47ztH04",
+      "title": "🥝 El SISTEMA DIGESTIVO del CUERPO HUMANO para NIÑOS de PRIMARIA",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "aparato digestivo y respiratorio ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/fuXb47ztH04/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=fuXb47ztH04",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/fuXb47ztH04"
+    },
+    {
+      "id": "2vHIMtKFuGk",
+      "title": "🟥SISTEMA ENDOCRINO 💚EXPLICADO FÁCIL🧠GLÁNDULAS Y HORMONAS🟥",
+      "channel": "BIOTUBE Ciencia Animada",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "sistema nervioso y endocrino ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/2vHIMtKFuGk/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=2vHIMtKFuGk",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/2vHIMtKFuGk"
+    },
+    {
+      "id": "-9i4cz_wS_U",
+      "title": "Ajustar o balancear reacciones químicas por el método de tanteo (parte 1)",
+      "channel": "Amigos de la Química",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "reacciones químicas ajuste"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/-9i4cz_wS_U/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=-9i4cz_wS_U",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/-9i4cz_wS_U"
+    },
+    {
+      "id": "aDHVXyFXxCE",
+      "title": "CINEMÁTICA desde cero: MRU, MRUA y todo eso...",
+      "channel": "El Traductor de Ingeniería",
+      "subject": "Ciencias",
+      "course": "1º Bach",
+      "topics": [
+        "cinemática MRU MRUA explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/aDHVXyFXxCE/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=aDHVXyFXxCE",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/aDHVXyFXxCE"
+    },
+    {
+      "id": "8t84ETH_tk8",
+      "title": "Cómo funciona DE VERDAD el sistema inmunitario",
+      "channel": "En Pocas Palabras – Kurzgesagt",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "sistema inmunitario defensas ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/8t84ETH_tk8/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=8t84ETH_tk8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/8t84ETH_tk8"
+    },
+    {
+      "id": "0KxRStoU0AE",
+      "title": "Cómo funciona su sistema digestivo - Emma Bryce",
+      "channel": "Sé Curioso — TED-Ed",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "aparato digestivo y respiratorio ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/0KxRStoU0AE/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=0KxRStoU0AE",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/0KxRStoU0AE"
+    },
+    {
+      "id": "X2Z-0e5maKw",
+      "title": "Fotosíntesis",
+      "channel": "Es Ciencia ",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "fotosíntesis explicación sencilla"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/X2Z-0e5maKw/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=X2Z-0e5maKw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/X2Z-0e5maKw"
+    },
+    {
+      "id": "TT9U8Xtioh0",
+      "title": "Inmunología 01 - Mecanismos de defensa inespecíficos y específicos",
+      "channel": "Lecciones de biología",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "sistema inmunitario defensas ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/TT9U8Xtioh0/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=TT9U8Xtioh0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/TT9U8Xtioh0"
+    },
+    {
+      "id": "aoj9oTvVJ8o",
+      "title": "La célula para niños - Tipos, estructura, funciones y partes  - Ciencia para niños",
+      "channel": "Smile and Learn - Español",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "la célula partes y funciones ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/aoj9oTvVJ8o/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=aoj9oTvVJ8o",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/aoj9oTvVJ8o"
+    },
+    {
+      "id": "WQgwaigJlsI",
+      "title": "La Célula: Definición, estructura, funciones y partes - Procariotas, eucariotas, animales, vegetales",
+      "channel": "Smile and Learn - Español",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "la célula partes y funciones ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/WQgwaigJlsI/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=WQgwaigJlsI",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/WQgwaigJlsI"
+    },
+    {
+      "id": "tdY1HaWbYQY",
+      "title": "LA CÉLULA. ESTRUCTURA Y FUNCIÓN CELULAR. MITOCONDRIAS, RIBOSOMAS, LISOSOMAS, ETC.",
+      "channel": "ARRIBA LA CIENCIA",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "la célula partes y funciones ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/tdY1HaWbYQY/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=tdY1HaWbYQY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/tdY1HaWbYQY"
+    },
+    {
+      "id": "mtGgo68VM54",
+      "title": "La fotosíntesis de las plantas | Ciencias naturales para niños",
+      "channel": "Smile and Learn - Español",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "fotosíntesis explicación sencilla"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/mtGgo68VM54/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=mtGgo68VM54",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/mtGgo68VM54"
+    },
+    {
+      "id": "iLt6C1oxmlc",
+      "title": "Leyes de Newton - EXPLICACIÓN COMPLETA con ejemplos",
+      "channel": "MateFacil - Física",
+      "subject": "Ciencias",
+      "course": "4º ESO",
+      "topics": [
+        "leyes de Newton explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/iLt6C1oxmlc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=iLt6C1oxmlc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/iLt6C1oxmlc"
+    },
+    {
+      "id": "S3jJj68dBxw",
+      "title": "Los sistemas del cuerpo humano para niños - Sistema circulatorio, digestivo y respiratorio",
+      "channel": "Smile and Learn - Español",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "aparato digestivo y respiratorio ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/S3jJj68dBxw/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=S3jJj68dBxw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/S3jJj68dBxw"
+    },
+    {
+      "id": "83GGnwFVuI0",
+      "title": "M.R.U y M.R.U.A. ¿Qué son? (fácil, rápido y sencillo)",
+      "channel": "La Física Pacífica",
+      "subject": "Ciencias",
+      "course": "1º Bach",
+      "topics": [
+        "cinemática MRU MRUA explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/83GGnwFVuI0/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=83GGnwFVuI0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/83GGnwFVuI0"
+    },
+    {
+      "id": "BafO55aF9oE",
+      "title": "Sistema Nervioso y Endocrino EXPLICADO FÁCIL",
+      "channel": "AltumX Educación",
+      "subject": "Ciencias",
+      "course": "3º ESO",
+      "topics": [
+        "sistema nervioso y endocrino ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/BafO55aF9oE/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=BafO55aF9oE",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/BafO55aF9oE"
+    },
+    {
+      "id": "AGNFQD1HstM",
+      "title": "Del mito al Logos",
+      "channel": "idea-Tec Educación ",
+      "subject": "Filosofía",
+      "course": "1º Bach",
+      "topics": [
+        "del mito al logos filosofía"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/AGNFQD1HstM/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=AGNFQD1HstM",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/AGNFQD1HstM"
+    },
+    {
+      "id": "pxbD9PQlrnc",
+      "title": "El paso del mito al logos - un análisis en profundidad",
+      "channel": "GusFai: Filosofía - Psicoanálisis - Psicología",
+      "subject": "Filosofía",
+      "course": "1º Bach",
+      "topics": [
+        "del mito al logos filosofía"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/pxbD9PQlrnc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=pxbD9PQlrnc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/pxbD9PQlrnc"
+    },
+    {
+      "id": "otC2pZgCwqw",
+      "title": "Ep. 2 - El Origen de la Filosofía: Del mito al Logos",
+      "channel": "Profesor León",
+      "subject": "Filosofía",
+      "course": "1º Bach",
+      "topics": [
+        "del mito al logos filosofía"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/otC2pZgCwqw/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=otC2pZgCwqw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/otC2pZgCwqw"
+    },
+    {
+      "id": "Yscq3PauprE",
+      "title": "PLATÓN ☀️► TEORÍA DE LAS IDEAS y DUALISMOS [Te lo Explico FÁCIL!]",
+      "channel": "Adictos a la Filosofía",
+      "subject": "Filosofía",
+      "course": "1º Bach",
+      "topics": [
+        "Platón teoría de las ideas resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Yscq3PauprE/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=Yscq3PauprE",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Yscq3PauprE"
+    },
+    {
+      "id": "Re7Ol-AJ97A",
+      "title": "PLATÓN: Teoría de las Ideas Explicada Fácil y Rápido",
+      "channel": "En Minutos • Educación",
+      "subject": "Filosofía",
+      "course": "1º Bach",
+      "topics": [
+        "Platón teoría de las ideas resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Re7Ol-AJ97A/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=Re7Ol-AJ97A",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Re7Ol-AJ97A"
+    },
+    {
+      "id": "63QfNrSEVY4",
+      "title": "TODO PLATÓN Resumido en 15 Minutos 😎 (FÁCIL!) 🤯",
+      "channel": "Adictos a la Filosofía",
+      "subject": "Filosofía",
+      "course": "1º Bach",
+      "topics": [
+        "Platón teoría de las ideas resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/63QfNrSEVY4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=63QfNrSEVY4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/63QfNrSEVY4"
+    },
+    {
+      "id": "kx25nh02t-k",
+      "title": "⚔ La PRIMERA GUERRA MUNDIAL: El DESAROLLO de la PRIMERA GUERRA MUNDIAL | Resumen",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Historia",
+      "course": "4º ESO",
+      "topics": [
+        "primera guerra mundial resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/kx25nh02t-k/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=kx25nh02t-k",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/kx25nh02t-k"
+    },
+    {
+      "id": "Wm3h6pwoyP4",
+      "title": "✅🇪🇸Los CLIMAS de ESPAÑA al detalle🇪🇸✅",
+      "channel": "Daniel Geohistoria",
+      "subject": "Historia",
+      "course": "3º ESO",
+      "topics": [
+        "climas y relieve de España"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Wm3h6pwoyP4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=Wm3h6pwoyP4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Wm3h6pwoyP4"
+    },
+    {
+      "id": "4prNLA2Ds4I",
+      "title": "✅✅✅🇪🇸 El RELIEVE de ESPAÑA / Geografía básica / Mapa físico de la Península Ibérica 🇪🇸✅",
+      "channel": "Daniel Geohistoria",
+      "subject": "Historia",
+      "course": "3º ESO",
+      "topics": [
+        "climas y relieve de España"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/4prNLA2Ds4I/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=4prNLA2Ds4I",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/4prNLA2Ds4I"
+    },
+    {
+      "id": "8-w2TAGvXQ4",
+      "title": "🏭 La PRIMERA REVOLUCIÓN INDUSTRIAL | Resumen en 4 MINUTOS",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Historia",
+      "course": "4º ESO",
+      "topics": [
+        "revolución industrial resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/8-w2TAGvXQ4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=8-w2TAGvXQ4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/8-w2TAGvXQ4"
+    },
+    {
+      "id": "VKVEQJkvP4s",
+      "title": "🗻 El RELIEVE de ESPAÑA para NIÑOS de PRIMARIA",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Historia",
+      "course": "3º ESO",
+      "topics": [
+        "climas y relieve de España"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/VKVEQJkvP4s/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=VKVEQJkvP4s",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/VKVEQJkvP4s"
+    },
+    {
+      "id": "Vbu6tH0Hc-o",
+      "title": "La Primera Guerra Mundial",
+      "channel": "Academia Play",
+      "subject": "Historia",
+      "course": "4º ESO",
+      "topics": [
+        "primera guerra mundial resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Vbu6tH0Hc-o/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=Vbu6tH0Hc-o",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Vbu6tH0Hc-o"
+    },
+    {
+      "id": "d0AcphkYfwM",
+      "title": "La Revolución Industrial — La Historia Completa De Cómo Las Máquinas Cambiaron El Mundo",
+      "channel": "Historia Del Comercio",
+      "subject": "Historia",
+      "course": "4º ESO",
+      "topics": [
+        "revolución industrial resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/d0AcphkYfwM/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=d0AcphkYfwM",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/d0AcphkYfwM"
+    },
+    {
+      "id": "3LQAnFEADl4",
+      "title": "La Revolución Industrial en 7 minutos",
+      "channel": "Academia Play",
+      "subject": "Historia",
+      "course": "4º ESO",
+      "topics": [
+        "revolución industrial resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/3LQAnFEADl4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=3LQAnFEADl4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/3LQAnFEADl4"
+    },
+    {
+      "id": "vDCjvkS_yUw",
+      "title": "LA TRANSICIÓN A LA DEMOCRACIA (1975-1981) | Historia de España 🇪🇸",
+      "channel": "La cuna de Halicarnaso",
+      "subject": "Historia",
+      "course": "4º ESO",
+      "topics": [
+        "transición española resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/vDCjvkS_yUw/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=vDCjvkS_yUw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/vDCjvkS_yUw"
+    },
+    {
+      "id": "u4bkgFD9pJ8",
+      "title": "LA TRANSICIÓN ESPAÑOLA EN 5 MINUTOS",
+      "channel": "APolo Historia",
+      "subject": "Historia",
+      "course": "4º ESO",
+      "topics": [
+        "transición española resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/u4bkgFD9pJ8/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=u4bkgFD9pJ8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/u4bkgFD9pJ8"
+    },
+    {
+      "id": "1NLK8_vZ3FQ",
+      "title": "La Transición Española Resumen",
+      "channel": "El Historiador",
+      "subject": "Historia",
+      "course": "4º ESO",
+      "topics": [
+        "transición española resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/1NLK8_vZ3FQ/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=1NLK8_vZ3FQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/1NLK8_vZ3FQ"
+    },
+    {
+      "id": "p9q8jkZd4vI",
+      "title": "Primera Guerra Mundial 1914-1918  - Documental (Todas las partes)",
+      "channel": "Historia Épica",
+      "subject": "Historia",
+      "course": "4º ESO",
+      "topics": [
+        "primera guerra mundial resumen"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/p9q8jkZd4vI/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=p9q8jkZd4vI",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/p9q8jkZd4vI"
+    },
+    {
+      "id": "LilD-Kftl_A",
+      "title": "¿Qué es la Inteligencia Artificial? Explicado para niños | Aprende con Loli",
+      "channel": " Aprende con Loli | Videos Educaivos ",
+      "subject": "IA",
+      "course": "Transversal",
+      "topics": [
+        "qué es la inteligencia artificial explicado"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/LilD-Kftl_A/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=LilD-Kftl_A",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/LilD-Kftl_A"
+    },
+    {
+      "id": "jKCQsndqEGQ",
+      "title": "¿Qué es una Red Neuronal? | Aprendizaje Profundo. Capítulo 1",
+      "channel": "3Blue1Brown Español",
+      "subject": "IA",
+      "course": "Transversal",
+      "topics": [
+        "redes neuronales explicación sencilla"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/jKCQsndqEGQ/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=jKCQsndqEGQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/jKCQsndqEGQ"
+    },
+    {
+      "id": "_tA5cinv0U8",
+      "title": "¿Qué es y cómo funciona la INTELIGENCIA ARTIFICIAL?",
+      "channel": "Derivando",
+      "subject": "IA",
+      "course": "Transversal",
+      "topics": [
+        "qué es la inteligencia artificial explicado"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/_tA5cinv0U8/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=_tA5cinv0U8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/_tA5cinv0U8"
+    },
+    {
+      "id": "rTpr6DuY4LU",
+      "title": "CienciaClip Challenge - ¿Qué son las redes neuronales?",
+      "channel": "Date un Vlog",
+      "subject": "IA",
+      "course": "Transversal",
+      "topics": [
+        "redes neuronales explicación sencilla"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/rTpr6DuY4LU/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=rTpr6DuY4LU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/rTpr6DuY4LU"
+    },
+    {
+      "id": "sWfKqT7dGoI",
+      "title": "INTELIGENCIA ARTIFICIAL para niños 🤖​🧠 Cómo escribir PROMPTS efectivos",
+      "channel": "Smile and Learn - Español",
+      "subject": "IA",
+      "course": "Transversal",
+      "topics": [
+        "cómo escribir buenos prompts"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/sWfKqT7dGoI/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=sWfKqT7dGoI",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/sWfKqT7dGoI"
+    },
+    {
+      "id": "UKncFg0PyEk",
+      "title": "INTELIGENCIA ARTIFICIAL PARA NIÑOS 🧠🤖 ¿Qué es la inteligencia artificial?",
+      "channel": "Smile and Learn - Español",
+      "subject": "IA",
+      "course": "Transversal",
+      "topics": [
+        "qué es la inteligencia artificial explicado"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/UKncFg0PyEk/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=UKncFg0PyEk",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/UKncFg0PyEk"
+    },
+    {
+      "id": "cSEoDbt1aRY",
+      "title": "REDES NEURONALES ¿CÓMO FUNCIONA EL CEREBRO?",
+      "channel": "Ciencia con Alma, Tu enciclopedia virtual",
+      "subject": "IA",
+      "course": "Transversal",
+      "topics": [
+        "redes neuronales explicación sencilla"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/cSEoDbt1aRY/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=cSEoDbt1aRY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/cSEoDbt1aRY"
+    },
+    {
+      "id": "HjzA0Z_ZyxE",
+      "title": "English Class: The first and second conditional",
+      "channel": "BBC Learning English",
+      "subject": "Inglés",
+      "course": "3º ESO B1",
+      "topics": [
+        "first and second conditional English"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/HjzA0Z_ZyxE/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=HjzA0Z_ZyxE",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/HjzA0Z_ZyxE"
+    },
+    {
+      "id": "L-wTVCByxzk",
+      "title": "How to use reported speech - 6 Minute Grammar",
+      "channel": "BBC Learning English",
+      "subject": "Inglés",
+      "course": "3º ESO B1",
+      "topics": [
+        "reported speech English grammar"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/L-wTVCByxzk/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=L-wTVCByxzk",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/L-wTVCByxzk"
+    },
+    {
+      "id": "jwmKjgwlMk8",
+      "title": "Present perfect and past simple -  6 Minute Grammar",
+      "channel": "BBC Learning English",
+      "subject": "Inglés",
+      "course": "3º ESO B1",
+      "topics": [
+        "present perfect vs past simple English lesson"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/jwmKjgwlMk8/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=jwmKjgwlMk8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/jwmKjgwlMk8"
+    },
+    {
+      "id": "XMfblqIPF_M",
+      "title": "Present perfect or past simple?",
+      "channel": "BBC Learning English",
+      "subject": "Inglés",
+      "course": "3º ESO B1",
+      "topics": [
+        "present perfect vs past simple English lesson"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/XMfblqIPF_M/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=XMfblqIPF_M",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/XMfblqIPF_M"
+    },
+    {
+      "id": "3tk8HDa0O-4",
+      "title": "Present perfect vs past simple, presente perfecto vs pasado simple",
+      "channel": "Clases de inglés en español. Gramática fácil.",
+      "subject": "Inglés",
+      "course": "3º ESO B1",
+      "topics": [
+        "present perfect vs past simple English lesson"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/3tk8HDa0O-4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=3tk8HDa0O-4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/3tk8HDa0O-4"
+    },
+    {
+      "id": "cetrtFDN2Zg",
+      "title": "Reported Speech: The Grammar Gameshow Episode 25",
+      "channel": "BBC Learning English",
+      "subject": "Inglés",
+      "course": "3º ESO B1",
+      "topics": [
+        "reported speech English grammar"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/cetrtFDN2Zg/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=cetrtFDN2Zg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/cetrtFDN2Zg"
+    },
+    {
+      "id": "tcOLyvkBc48",
+      "title": "The First Conditional: The Grammar Gameshow Episode 10",
+      "channel": "BBC Learning English",
+      "subject": "Inglés",
+      "course": "3º ESO B1",
+      "topics": [
+        "first and second conditional English"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/tcOLyvkBc48/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=tcOLyvkBc48",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/tcOLyvkBc48"
+    },
+    {
+      "id": "WkDxt-9-nDs",
+      "title": "The Zero, First and Second Conditional in 4 minutes (English Grammar)",
+      "channel": "Illustrated & Explained",
+      "subject": "Inglés",
+      "course": "3º ESO B1",
+      "topics": [
+        "first and second conditional English"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/WkDxt-9-nDs/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=WkDxt-9-nDs",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/WkDxt-9-nDs"
+    },
+    {
+      "id": "BqcwRP7S07g",
+      "title": "📚 ANÁLISIS SINTÁCTICO de ORACIONES SIMPLES ▶ EJERCICIOS",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Lengua",
+      "course": "3º ESO",
+      "topics": [
+        "análisis sintáctico oraciones ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/BqcwRP7S07g/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=BqcwRP7S07g",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/BqcwRP7S07g"
+    },
+    {
+      "id": "tKDeISjw328",
+      "title": "📚 DIPTONGO, TRIPTONGO, e HIATO 📚 para NIÑOS de PRIMARIA",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Lengua",
+      "course": "3º ESO",
+      "topics": [
+        "acentuación diptongos hiatos triptongos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/tKDeISjw328/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=tKDeISjw328",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/tKDeISjw328"
+    },
+    {
+      "id": "b7Gx2QnvEoQ",
+      "title": "📚 FIGURAS LITERARIAS o RETÓRICAS con EJEMPLOS",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Lengua",
+      "course": "4º ESO",
+      "topics": [
+        "figuras retóricas explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/b7Gx2QnvEoQ/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=b7Gx2QnvEoQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/b7Gx2QnvEoQ"
+    },
+    {
+      "id": "RgGVn93bCNg",
+      "title": "🔴 ANÁLISIS SINTÁCTICO de ORACIONES SIMPLES 🟩 Sintaxis",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Lengua",
+      "course": "3º ESO",
+      "topics": [
+        "análisis sintáctico oraciones ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/RgGVn93bCNg/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=RgGVn93bCNg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/RgGVn93bCNg"
+    },
+    {
+      "id": "Ub1Pl0AvUjc",
+      "title": "🔴 ANALISIS sintáctico y TIPOS de ORACIONES compuestas COORDINADAS 🟩 Sintaxis",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Lengua",
+      "course": "3º ESO",
+      "topics": [
+        "análisis sintáctico oraciones ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Ub1Pl0AvUjc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=Ub1Pl0AvUjc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Ub1Pl0AvUjc"
+    },
+    {
+      "id": "xeVfyy9UP5E",
+      "title": "Figuras literarias explicadas con ejemplos✍",
+      "channel": "Profesor Paolo Astorga",
+      "subject": "Lengua",
+      "course": "4º ESO",
+      "topics": [
+        "figuras retóricas explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/xeVfyy9UP5E/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=xeVfyy9UP5E",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/xeVfyy9UP5E"
+    },
+    {
+      "id": "vunzhUk5hsg",
+      "title": "FIGURAS LITERARIAS para niños 🧾​ Símil, metáfora e hipérbole ✏️​ Literatura para niños ✍️ Episodio 1",
+      "channel": "Smile and Learn - Español",
+      "subject": "Lengua",
+      "course": "4º ESO",
+      "topics": [
+        "figuras retóricas explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/vunzhUk5hsg/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=vunzhUk5hsg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/vunzhUk5hsg"
+    },
+    {
+      "id": "QWAg_1m47ao",
+      "title": "LOS DIPTONGOS 🦸‍♀️ GRAMÁTICA y ORTOGRAFÍA para niños 📝 Superlexia⭐ Episodio 9",
+      "channel": "Smile and Learn - Español",
+      "subject": "Lengua",
+      "course": "3º ESO",
+      "topics": [
+        "acentuación diptongos hiatos triptongos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/QWAg_1m47ao/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=QWAg_1m47ao",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/QWAg_1m47ao"
+    },
+    {
+      "id": "bR8bwTQIyGk",
+      "title": "Tema 3 - La tilde en diptongos y triptongos.",
+      "channel": "EDUCACIÓN GILES & CANTERO (EDUCÁGICA)",
+      "subject": "Lengua",
+      "course": "3º ESO",
+      "topics": [
+        "acentuación diptongos hiatos triptongos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/bR8bwTQIyGk/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=bR8bwTQIyGk",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/bR8bwTQIyGk"
+    },
+    {
+      "id": "LlaZGSIieUw",
+      "title": "🌍📐 ¡A MEDIR el MUNDO! Trigonometría, Pitágoras, Seno, Coseno y Radianes.",
+      "channel": "El Traductor de Ingeniería",
+      "subject": "Matemáticas",
+      "course": "4º ESO",
+      "topics": [
+        "trigonometría básica seno coseno tangente"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/LlaZGSIieUw/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=LlaZGSIieUw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/LlaZGSIieUw"
+    },
+    {
+      "id": "FRvbjh2gy_w",
+      "title": "🎲 PROBABILIDAD para NIÑOS de PRIMARIA 🃏 [ suceso SEGURO, POSIBLE e IMPOSIBLE ]",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Matemáticas",
+      "course": "4º ESO",
+      "topics": [
+        "estadística probabilidad ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/FRvbjh2gy_w/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=FRvbjh2gy_w",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/FRvbjh2gy_w"
+    },
+    {
+      "id": "h56iuRhQakw",
+      "title": "📈 FUNCIONES: Variable independiente, dependiente, dominio y recorrido",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Matemáticas",
+      "course": "4º ESO",
+      "topics": [
+        "funciones matemáticas dominio recorrido"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/h56iuRhQakw/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=h56iuRhQakw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/h56iuRhQakw"
+    },
+    {
+      "id": "kN1lgy6fPVU",
+      "title": "🔴 PROPIEDADES de las POTENCIAS",
+      "channel": "Clases Particulares en Ávila",
+      "subject": "Matemáticas",
+      "course": "1º-2º ESO",
+      "topics": [
+        "números enteros potencias ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/kN1lgy6fPVU/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=kN1lgy6fPVU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/kN1lgy6fPVU"
+    },
+    {
+      "id": "BhHgMtjlebc",
+      "title": "07 Teorema de Pitágoras   Ejercicios",
+      "channel": "Píldoras matemáticas",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "teorema de pitágoras ejercicios"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/BhHgMtjlebc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=BhHgMtjlebc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/BhHgMtjlebc"
+    },
+    {
+      "id": "H2R5Y7JDy8k",
+      "title": "100 ECUACIONES DE PRIMER GRADO RESUELTAS PASO A PASO. DESDE CERO. Matemáticas Básicas.",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "ecuaciones de primer grado resueltas"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/H2R5Y7JDy8k/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=H2R5Y7JDy8k",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/H2R5Y7JDy8k"
+    },
+    {
+      "id": "6LFsvFgWFAU",
+      "title": "5 ECUACIONES DE PRIMER GRADO resueltas paso a paso",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "ecuaciones de primer grado resueltas"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/6LFsvFgWFAU/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=6LFsvFgWFAU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/6LFsvFgWFAU"
+    },
+    {
+      "id": "dmhET-Nw45E",
+      "title": "Aprende LOGARITMOS desde cero ✅ CLAVES y TRUCOS Ejercicios resueltos",
+      "channel": "profesor10demates",
+      "subject": "Matemáticas",
+      "course": "1º Bach",
+      "topics": [
+        "logaritmos bachillerato explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/dmhET-Nw45E/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=dmhET-Nw45E",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/dmhET-Nw45E"
+    },
+    {
+      "id": "WC-cfVDY81c",
+      "title": "APRENDER A RESOLVER ECUACIONES DE PRIMER GRADO DESDE CERO",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "ecuaciones de primer grado resueltas"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/WC-cfVDY81c/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=WC-cfVDY81c",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/WC-cfVDY81c"
+    },
+    {
+      "id": "ZyLz5SUMzNY",
+      "title": "APRENDER TRIGONOMETRÍA DESDE CERO. Curso de trigonometría",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "4º ESO",
+      "topics": [
+        "trigonometría básica seno coseno tangente"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ZyLz5SUMzNY/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=ZyLz5SUMzNY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ZyLz5SUMzNY"
+    },
+    {
+      "id": "AhobE24ay70",
+      "title": "Cálculo de LÍMITES 🔝 cuando x tiende a Infinito 🔥 Indeterminaciones [con raíces ] 1º 2º bachillerato",
+      "channel": "profesor10demates",
+      "subject": "Matemáticas",
+      "course": "1º Bach",
+      "topics": [
+        "límites de funciones indeterminaciones"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/AhobE24ay70/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=AhobE24ay70",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/AhobE24ay70"
+    },
+    {
+      "id": "TFaUnAtaan4",
+      "title": "Clase #1 de Integrales: Inmediatas y Cambio de Variable",
+      "channel": "El Traductor de Ingeniería",
+      "subject": "Matemáticas",
+      "course": "2º Bach / PAU",
+      "topics": [
+        "integrales inmediatas regla de barrow"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/TFaUnAtaan4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=TFaUnAtaan4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/TFaUnAtaan4"
+    },
+    {
+      "id": "pl4Af3QbatM",
+      "title": "CÓMO RESOLVER SISTEMAS DE ECUACIONES LINEALES 2X2 EN 5 SEGUNDOS",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "sistemas de ecuaciones 2x2 métodos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/pl4Af3QbatM/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=pl4Af3QbatM",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/pl4Af3QbatM"
+    },
+    {
+      "id": "ifyDuAw0MvE",
+      "title": "CURSO SUPER BÁSICO DE PROBABILIDAD, desde cero. Introducción. Lo más importante",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "4º ESO",
+      "topics": [
+        "estadística probabilidad ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ifyDuAw0MvE/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=ifyDuAw0MvE",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ifyDuAw0MvE"
+    },
+    {
+      "id": "y71o6m6mK7A",
+      "title": "Deducción de la fórmula general para resolver ecuaciones de segundo grado. Demostración",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "ecuaciones de segundo grado fórmula general"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/y71o6m6mK7A/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=y71o6m6mK7A",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/y71o6m6mK7A"
+    },
+    {
+      "id": "nTY64wRlczA",
+      "title": "Derivada de un producto | Reglas de derivación",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "2º Bach / PAU",
+      "topics": [
+        "derivadas reglas de derivación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/nTY64wRlczA/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=nTY64wRlczA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/nTY64wRlczA"
+    },
+    {
+      "id": "m_5-WS9Nd68",
+      "title": "Derivadas Regla de la cadena | Función compuesta | Ejemplo 1",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "2º Bach / PAU",
+      "topics": [
+        "derivadas reglas de derivación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/m_5-WS9Nd68/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=m_5-WS9Nd68",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/m_5-WS9Nd68"
+    },
+    {
+      "id": "H40lcwlgPMk",
+      "title": "Dominio y rango de una función",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "4º ESO",
+      "topics": [
+        "funciones matemáticas dominio recorrido"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/H40lcwlgPMk/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=H40lcwlgPMk",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/H40lcwlgPMk"
+    },
+    {
+      "id": "gV8Iu5M1sac",
+      "title": "Ecuacion cuadrática - Segundo grado por Fórmula General | Ejemplo 1",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "ecuaciones de segundo grado fórmula general"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/gV8Iu5M1sac/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=gV8Iu5M1sac",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/gV8Iu5M1sac"
+    },
+    {
+      "id": "BxrJmKdPHRs",
+      "title": "Ecuación cuadrática por fórmula general | Ejemplo 1",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "ecuaciones de segundo grado fórmula general"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/BxrJmKdPHRs/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=BxrJmKdPHRs",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/BxrJmKdPHRs"
+    },
+    {
+      "id": "c9cTIjBqFTw",
+      "title": "Fracciones para niños - Aprende las fracciones con pizza - Introducción",
+      "channel": "Smile and Learn - Español",
+      "subject": "Matemáticas",
+      "course": "1º-2º ESO",
+      "topics": [
+        "fracciones explicación ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/c9cTIjBqFTw/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=c9cTIjBqFTw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/c9cTIjBqFTw"
+    },
+    {
+      "id": "WdfWMMrsCLo",
+      "title": "Funciones TRIGONOMÉTRICAS: sen, cos, tan, csc, sec, cotan, arctan | El Traductor",
+      "channel": "El Traductor de Ingeniería",
+      "subject": "Matemáticas",
+      "course": "4º ESO",
+      "topics": [
+        "trigonometría básica seno coseno tangente"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/WdfWMMrsCLo/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=WdfWMMrsCLo",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/WdfWMMrsCLo"
+    },
+    {
+      "id": "xQBCB2P9FZA",
+      "title": "Hallar el DOMINIO de una FUNCIÓN | Súper Resumen",
+      "channel": "profesor10demates",
+      "subject": "Matemáticas",
+      "course": "4º ESO",
+      "topics": [
+        "funciones matemáticas dominio recorrido"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/xQBCB2P9FZA/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=xQBCB2P9FZA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/xQBCB2P9FZA"
+    },
+    {
+      "id": "8mkt8jJu03s",
+      "title": "Integral Definida - Regla de Barrow",
+      "channel": "Los Profes De Ciencias",
+      "subject": "Matemáticas",
+      "course": "2º Bach / PAU",
+      "topics": [
+        "integrales inmediatas regla de barrow"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/8mkt8jJu03s/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=8mkt8jJu03s",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/8mkt8jJu03s"
+    },
+    {
+      "id": "hfppEPnQGHg",
+      "title": "integral definida regla de barrow 01",
+      "channel": "profesor10demates",
+      "subject": "Matemáticas",
+      "course": "2º Bach / PAU",
+      "topics": [
+        "integrales inmediatas regla de barrow"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/hfppEPnQGHg/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=hfppEPnQGHg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/hfppEPnQGHg"
+    },
+    {
+      "id": "DOyTCSJCRw8",
+      "title": "LA REGLA DE LA CADENA-DERIVADAS. 10 EJERCICIOS IMPRESCINDIBLES PARA DOMINAR ESTE TEMA. Derivación.",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "2º Bach / PAU",
+      "topics": [
+        "derivadas reglas de derivación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/DOyTCSJCRw8/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=DOyTCSJCRw8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/DOyTCSJCRw8"
+    },
+    {
+      "id": "rCr9atQ-wkA",
+      "title": "LAS 8 PROPIEDADES DE LOS LOGARITMOS. Con ejemplos",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "1º Bach",
+      "topics": [
+        "logaritmos bachillerato explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/rCr9atQ-wkA/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=rCr9atQ-wkA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/rCr9atQ-wkA"
+    },
+    {
+      "id": "F4NrlZpANKc",
+      "title": "LÍMITES INDETERMINADOS. TODOS LOS CASOS",
+      "channel": "Matemáticas con Juan",
+      "subject": "Matemáticas",
+      "course": "1º Bach",
+      "topics": [
+        "límites de funciones indeterminaciones"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/F4NrlZpANKc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=F4NrlZpANKc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/F4NrlZpANKc"
+    },
+    {
+      "id": "pZTuEHrnOMg",
+      "title": "Logaritmos | Introducción conceptos básicos",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "1º Bach",
+      "topics": [
+        "logaritmos bachillerato explicación"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/pZTuEHrnOMg/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=pZTuEHrnOMg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/pZTuEHrnOMg"
+    },
+    {
+      "id": "aPGIakwlDZ4",
+      "title": "MATRICES  2 bachillerato 🔝 Ejercicios resueltos de Exámenes",
+      "channel": "profesor10demates",
+      "subject": "Matemáticas",
+      "course": "2º Bach / PAU",
+      "topics": [
+        "matrices y determinantes selectividad"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/aPGIakwlDZ4/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=aPGIakwlDZ4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/aPGIakwlDZ4"
+    },
+    {
+      "id": "mpwEQ3usaEc",
+      "title": "Potenciacion de numeros enteros",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "1º-2º ESO",
+      "topics": [
+        "números enteros potencias ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/mpwEQ3usaEc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=mpwEQ3usaEc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/mpwEQ3usaEc"
+    },
+    {
+      "id": "isHcli8EcZA",
+      "title": "POTENCIACIÓN de NÚMEROS ENTEROS | SUPER FÁCIL 🤩 | DEFINICIÓN, REGLA PRÁCTICA, ERRORES COMUNES y MÁS",
+      "channel": "Aprendiendo Matemática",
+      "subject": "Matemáticas",
+      "course": "1º-2º ESO",
+      "topics": [
+        "números enteros potencias ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/isHcli8EcZA/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=isHcli8EcZA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/isHcli8EcZA"
+    },
+    {
+      "id": "ZBMUyM_dsx8",
+      "title": "Problemas con Fracciones | 5 Consejos",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "1º-2º ESO",
+      "topics": [
+        "fracciones explicación ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ZBMUyM_dsx8/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=ZBMUyM_dsx8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ZBMUyM_dsx8"
+    },
+    {
+      "id": "PaHb8I6uTXY",
+      "title": "Propiedades de los DETERMINANTES 🔝 Bachillerato y Universidad 🚂 [ Matrices Paso a paso ]",
+      "channel": "profesor10demates",
+      "subject": "Matemáticas",
+      "course": "2º Bach / PAU",
+      "topics": [
+        "matrices y determinantes selectividad"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/PaHb8I6uTXY/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=PaHb8I6uTXY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/PaHb8I6uTXY"
+    },
+    {
+      "id": "LgMptyzudXU",
+      "title": "Si te parecen dificiles las fracciones debes ver este video",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "1º-2º ESO",
+      "topics": [
+        "fracciones explicación ESO"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/LgMptyzudXU/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=LgMptyzudXU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/LgMptyzudXU"
+    },
+    {
+      "id": "apPXOlZnRhg",
+      "title": "Sistemas de ecuaciones lineales 2x2 | Método de igualación | Ejemplo 1",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "sistemas de ecuaciones 2x2 métodos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/apPXOlZnRhg/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=apPXOlZnRhg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/apPXOlZnRhg"
+    },
+    {
+      "id": "LTfv1G2iYuQ",
+      "title": "Sistemas de ecuaciones lineales 2x2 | Método de Sustitución | Ejemplo 1",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "sistemas de ecuaciones 2x2 métodos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/LTfv1G2iYuQ/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=LTfv1G2iYuQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/LTfv1G2iYuQ"
+    },
+    {
+      "id": "kRaL0widcCY",
+      "title": "Solución de límites por factorización | Introducción",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "1º Bach",
+      "topics": [
+        "límites de funciones indeterminaciones"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/kRaL0widcCY/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=kRaL0widcCY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/kRaL0widcCY"
+    },
+    {
+      "id": "Ev4zMeZGwgU",
+      "title": "Teorema de Pitágoras | Ejercicio de práctica",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "teorema de pitágoras ejercicios"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Ev4zMeZGwgU/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=Ev4zMeZGwgU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Ev4zMeZGwgU"
+    },
+    {
+      "id": "2UbdPiqAiHY",
+      "title": "Teorema de Pitágoras | Encontrar la hipotenusa",
+      "channel": "Matemáticas profe Alex",
+      "subject": "Matemáticas",
+      "course": "3º ESO",
+      "topics": [
+        "teorema de pitágoras ejercicios"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/2UbdPiqAiHY/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=2UbdPiqAiHY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/2UbdPiqAiHY"
+    },
+    {
+      "id": "rpEjJigCj4o",
+      "title": "25. Curso Excel. Fórmulas matriciales.",
+      "channel": "Cápsulas informáticas",
+      "subject": "Programación",
+      "course": "Ofimática",
+      "topics": [
+        "Excel fórmulas y funciones básicas"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/rpEjJigCj4o/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=rpEjJigCj4o",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/rpEjJigCj4o"
+    },
+    {
+      "id": "XqFR2lqBYPs",
+      "title": "Aprende HTML y CSS - Curso Desde Cero",
+      "channel": "freeCodeCamp Español",
+      "subject": "Programación",
+      "course": "Transversal",
+      "topics": [
+        "HTML y CSS desde cero"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/XqFR2lqBYPs/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=XqFR2lqBYPs",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/XqFR2lqBYPs"
+    },
+    {
+      "id": "DLikpfc64cA",
+      "title": "Aprende Python - Curso de Python desde Cero",
+      "channel": "freeCodeCamp Español",
+      "subject": "Programación",
+      "course": "Transversal",
+      "topics": [
+        "Python desde cero para principiantes"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/DLikpfc64cA/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=DLikpfc64cA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/DLikpfc64cA"
+    },
+    {
+      "id": "vKatehGB_pw",
+      "title": "Aprende Python desde CERO en menos de 1 hora",
+      "channel": "El Rincón de la Informática",
+      "subject": "Programación",
+      "course": "Transversal",
+      "topics": [
+        "Python desde cero para principiantes"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/vKatehGB_pw/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=vKatehGB_pw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/vKatehGB_pw"
+    },
+    {
+      "id": "5Ohme4A2Weg",
+      "title": "Curso de Python. POO I. Vídeo 24",
+      "channel": "pildorasinformaticas",
+      "subject": "Programación",
+      "course": "Transversal",
+      "topics": [
+        "Python programación orientada a objetos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/5Ohme4A2Weg/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=5Ohme4A2Weg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/5Ohme4A2Weg"
+    },
+    {
+      "id": "iliKayKaGtc",
+      "title": "Introducción a POO con ejemplos en Python - Programación Orientada a Objetos",
+      "channel": "Programación Desde Cero",
+      "subject": "Programación",
+      "course": "Transversal",
+      "topics": [
+        "Python programación orientada a objetos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/iliKayKaGtc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=iliKayKaGtc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/iliKayKaGtc"
+    },
+    {
+      "id": "knnhFa75xXU",
+      "title": "Python desde cero 56: Clases y objetos en programacion orientada a objetos",
+      "channel": "Pildoras de programación",
+      "subject": "Programación",
+      "course": "Transversal",
+      "topics": [
+        "Python programación orientada a objetos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/knnhFa75xXU/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=knnhFa75xXU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/knnhFa75xXU"
+    }
+  ]
+}
