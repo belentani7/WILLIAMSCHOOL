@@ -25,7 +25,7 @@ jobs:
           node-version: '22'
           cache: npm
       - name: Instalar dependencias
-        run: npm ci
+        run: npm install --no-audit --no-fund
       - name: Lint
         run: npm run lint --if-present
       - name: Typecheck
