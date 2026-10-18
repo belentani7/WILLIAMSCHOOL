@@ -33,6 +33,7 @@ export default function App() {
     safetyShieldEnabled: true,
     dataVaultEncrypted: true,
     autoVoiceEnabled: true,
+    lastBreakTimestamp: Date.now(),
     parentPin: '1234'
   });
 
