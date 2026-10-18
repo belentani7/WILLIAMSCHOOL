@@ -7,6 +7,7 @@ import {
   SquareCode, TrendingUp, Trophy, Compass, FileText, Check 
 } from 'lucide-react';
 import { speakBelentani, playSoundSuccess, playSoundError } from '../utils/speech';
+import { createLearner, completeLesson, lessonKey, loadLearningProgress, saveLearningProgress } from '../utils/learningProgress';
 
 export const AcademicPlan: React.FC = () => {
   const [selectedYear, setSelectedYear] = useState<AcademicYear>('3eso');
@@ -15,11 +16,30 @@ export const AcademicPlan: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'leccion' | 'ejercicios' | 'examen'>('leccion');
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
   const [showExplanations, setShowExplanations] = useState<Record<string, boolean>>({});
+  const [progress, setProgress] = useState(loadLearningProgress);
+  const [newLearnerName, setNewLearnerName] = useState('');
+
+  const updateProgress = (next: typeof progress) => {
+    setProgress(next);
+    saveLearningProgress(next);
+  };
+
+  const startLearnerSession = (next: typeof progress) => {
+    updateProgress(next);
+    setActiveTopicIndex(0);
+    setActiveTab('leccion');
+    setSelectedAnswers({});
+    setShowExplanations({});
+  };
+
+  const activeLearner = progress.profiles.find(profile => profile.id === progress.activeProfileId)!;
 
   // Filter modules by year or get all
   const yearModules = ACADEMIC_MODULES.filter(m => m.year === selectedYear);
   const currentModule = ACADEMIC_MODULES.find(m => m.id === selectedModuleId) || yearModules[0] || ACADEMIC_MODULES[0];
   const activeTopic = currentModule.topics[activeTopicIndex] || currentModule.topics[0];
+  const completedTopics = currentModule.topics.filter(topic => activeLearner.completed.includes(lessonKey(currentModule.id, topic.id))).length;
+  const currentLessonCompleted = activeLearner.completed.includes(lessonKey(currentModule.id, activeTopic.id));
 
   const handleSpeakTopic = (text: string, lang: 'es' | 'ca' | 'en' = 'es') => {
     playSoundSuccess();
@@ -50,7 +70,7 @@ export const AcademicPlan: React.FC = () => {
   const courseList: { id: AcademicYear; label: string; age: string; note: string }[] = [
     { id: '1eso', label: '1º ESO', age: '12-13 años', note: 'Fundamentos ESO' },
     { id: '2eso', label: '2º ESO', age: '13-14 años', note: 'Consolidación' },
-    { id: '3eso', label: '3º ESO', age: '14 años', note: '⭐ Curso Actual de Danilo' },
+    { id: '3eso', label: '3º ESO', age: '14 años', note: 'Curso de referencia' },
     { id: '4eso', label: '4º ESO', age: '15-16 años', note: 'Título Graduado ESO' },
     { id: '1bach', label: '1º Bachillerato', age: '16-17 años', note: 'Itinerario Académico' },
     { id: '2bach', label: '2º Bach / PAU', age: '17-18 años', note: 'Acceso Universidad' }
@@ -58,6 +78,34 @@ export const AcademicPlan: React.FC = () => {
 
   return (
     <div className="space-y-5">
+      <section className="rounded-2xl border border-blue-400/30 bg-gradient-to-r from-blue-800 via-sky-800 to-indigo-900 px-5 py-5 text-white shadow-lg md:px-7" aria-label="Mi recorrido de aprendizaje">
+        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <h2 className="text-2xl font-black tracking-tight md:text-3xl">Tu camino en Belentani School</h2>
+            <p className="mt-2 text-sm leading-relaxed text-sky-100">Aprende a tu ritmo. Cada lección que completas abre la siguiente. Este perfil guarda sus logros en este navegador.</p>
+          </div>
+          <div className="flex flex-wrap items-end gap-2">
+            <label className="text-xs font-semibold text-sky-100">
+              Perfil
+              <select aria-label="Perfil de aprendizaje" value={progress.activeProfileId} onChange={event => startLearnerSession({ ...progress, activeProfileId: event.target.value })} className="mt-1 block min-w-40 rounded-lg border border-sky-300 bg-slate-900 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-sky-400">
+                {progress.profiles.map(profile => <option key={profile.id} value={profile.id}>{profile.name}</option>)}
+              </select>
+            </label>
+            <form onSubmit={event => { event.preventDefault(); if (newLearnerName.trim()) { startLearnerSession(createLearner(progress, newLearnerName)); setNewLearnerName(''); } }} className="flex gap-2">
+              <label className="sr-only" htmlFor="new-learner-name">Nombre del nuevo perfil</label>
+              <input id="new-learner-name" value={newLearnerName} onChange={event => setNewLearnerName(event.target.value)} maxLength={40} placeholder="Nuevo perfil" className="w-32 rounded-lg border border-sky-300 bg-slate-900 px-3 py-2 text-sm text-white placeholder:text-sky-200 focus:outline-none focus:ring-2 focus:ring-sky-400" />
+              <button type="submit" disabled={!newLearnerName.trim()} className="rounded-lg bg-sky-300 px-3 py-2 text-sm font-bold text-slate-950 hover:bg-sky-200 disabled:cursor-not-allowed disabled:opacity-50">Crear</button>
+            </form>
+          </div>
+        </div>
+        <div className="mt-5 flex flex-wrap items-center justify-between gap-2 border-t border-sky-900 pt-4 text-sm">
+          <span className="font-semibold text-sky-100">{currentModule.name} · {currentModule.yearLabel}</span>
+          <span className="font-bold text-white">{completedTopics} de {currentModule.topics.length} lecciones conquistadas</span>
+        </div>
+        <div role="progressbar" aria-label="Progreso de la asignatura" aria-valuenow={completedTopics} aria-valuemin={0} aria-valuemax={currentModule.topics.length} className="mt-2 h-2 overflow-hidden rounded-full bg-sky-950">
+          <div className="h-full rounded-full bg-sky-300 transition-[width] duration-300" style={{ width: `${currentModule.topics.length ? 100 * completedTopics / currentModule.topics.length : 0}%` }} />
+        </div>
+      </section>
       {/* Top Banner: Cognitive-Friendly Educational Aero Card */}
       <div className="bg-gradient-to-r from-blue-700 via-sky-700 to-indigo-800 rounded-2xl p-6 text-white shadow-lg border border-blue-400/20 relative overflow-hidden">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 relative z-10">
@@ -167,23 +215,29 @@ export const AcademicPlan: React.FC = () => {
               Unidades Didácticas:
             </h4>
             <div className="space-y-1.5">
-              {currentModule.topics.map((t, idx) => (
+              {currentModule.topics.map((t, idx) => {
+                const conquered = activeLearner.completed.includes(lessonKey(currentModule.id, t.id));
+                const unlocked = idx === 0 || activeLearner.completed.includes(lessonKey(currentModule.id, currentModule.topics[idx - 1].id));
+                return (
                 <button
                   key={t.id}
+                  disabled={!unlocked}
+                  aria-label={`${t.title}: ${conquered ? 'conquistada' : unlocked ? 'disponible' : 'pendiente'}`}
                   onClick={() => {
                     playSoundSuccess();
                     setActiveTopicIndex(idx);
+                    setActiveTab('leccion');
                   }}
                   className={`w-full p-2.5 rounded-xl border text-left text-xs transition-all ${
                     activeTopicIndex === idx
                       ? 'bg-sky-50 border-sky-400 text-sky-950 font-bold shadow-sm'
-                      : 'bg-white hover:bg-slate-50 border-slate-200 text-slate-700'
+                      : unlocked ? 'bg-white hover:bg-slate-50 border-slate-200 text-slate-700' : 'bg-slate-100 border-slate-200 text-slate-500 cursor-not-allowed'
                   }`}
                 >
-                  <div className="font-semibold">{t.title}</div>
+                  <div className="font-semibold">{conquered ? '✓ ' : unlocked ? '• ' : '○ '}{t.title}</div>
                   <div className="text-[10px] text-slate-500 font-normal">{t.subtitle}</div>
                 </button>
-              ))}
+              ); })}
             </div>
           </div>
         </div>
@@ -248,6 +302,10 @@ export const AcademicPlan: React.FC = () => {
           {/* TAB 1: Detailed Theoretical Lesson */}
           {activeTab === 'leccion' && (
             <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 space-y-5">
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-4">
+                <p className="text-sm font-semibold text-slate-700">{currentLessonCompleted ? 'Lección conquistada. Puedes repasarla cuando quieras.' : 'Estudia esta lección y registra tu logro cuando termines.'}</p>
+                <button type="button" disabled={currentLessonCompleted} onClick={() => { updateProgress(completeLesson(progress, lessonKey(currentModule.id, activeTopic.id))); playSoundSuccess(); }} className="rounded-lg bg-blue-700 px-4 py-2 text-sm font-bold text-white hover:bg-blue-800 disabled:cursor-default disabled:bg-emerald-100 disabled:text-emerald-900">{currentLessonCompleted ? 'Conquistada' : 'He completado esta lección'}</button>
+              </div>
               <div>
                 <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded">
                   {currentModule.name} · {currentModule.yearLabel}

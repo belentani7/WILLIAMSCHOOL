@@ -58,3 +58,6 @@ lint o build.
 ## Documentacion obligatoria antes de codigo
 
 PRD -> SRS -> SDD -> ADR -> Plan (ver `docs/`). Gate: sin documento no se codifica.
+
+<!-- belentani-vibe-toolkit -->
+Read [.vibe-toolkit/AGENTS.md](.vibe-toolkit/AGENTS.md) for the compatible toolkit workflow.
