@@ -26,11 +26,14 @@ En línea: <https://williamschool-livid.vercel.app>
 - **Express** (`server.ts`) como servidor y proxy de IA
 - **npm** como gestor de paquetes (no Bun: `bun` no funciona en este equipo)
 
-## IA: una sola API
+## Tutor IA y compañero: servicios distintos
 
-El compañero usa **Hugging Face** como único proveedor (`HUGGINGFACE_TOKEN`,
-`COMPANION_MODEL`). Si no hay token, responde en modo local y avisa de que el modelo no
-está conectado. No hay proveedores de respaldo ni claves duplicadas.
+La aplicación conserva **dos funciones independientes**, ambas implementadas en `server.ts`:
+
+- **Tutor académico / lecciones:** `POST /api/gemini/chat` y `POST /api/gemini/generate-lesson` utilizan Google Gemini con `GEMINI_API_KEY`. Sin esta clave, la aplicación ofrece respuestas demostrativas señaladas como simuladas; no debe presentarlas como generación en tiempo real.
+- **Compañero Belentani:** `POST /api/companion/chat` utiliza Hugging Face (`HUGGINGFACE_TOKEN` y `COMPANION_MODEL`), en portugués brasileño por defecto. Cuando el modelo no está disponible, contesta con un mensaje local identificado como `provider: "offline"` y `simulated: true`. Esta ruta **no** cambia automáticamente a Gemini.
+
+Las claves solo pertenecen al entorno del servidor; no se deben publicar en Git ni incluir en el JavaScript del navegador. El personaje de IA no debe presentarse como consciente, profesional sanitario ni sustituto de docentes o tutores legales.
 
 ## Datos reales, no inventados
 
