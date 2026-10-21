@@ -1,47 +1,19 @@
 {
   "repo": "open-school",
-  "generatedAt": "2026-10-01T16:19:46.304Z",
+  "generatedAt": "2026-10-18T04:09:41.472Z",
   "datasets": [
-    {
-      "id": "catalog__LEVELS",
-      "label": "LEVELS",
-      "kind": "array",
-      "count": 5,
-      "file": "catalog__LEVELS.json"
-    },
-    {
-      "id": "catalog__ROUTES",
-      "label": "ROUTES",
-      "kind": "array",
-      "count": 6,
-      "file": "catalog__ROUTES.json"
-    },
-    {
-      "id": "catalog__STATUS_LABEL",
-      "label": "STATUS LABEL",
-      "kind": "object",
-      "count": 3,
-      "file": "catalog__STATUS_LABEL.json"
-    },
-    {
-      "id": "catalog__TOTALS",
-      "label": "TOTALS",
-      "kind": "object",
-      "count": 6,
-      "file": "catalog__TOTALS.json"
-    },
     {
       "id": "biblia__AMBIGUOS",
       "label": "AMBIGUOS",
       "kind": "object",
-      "count": 2,
+      "count": 4,
       "file": "biblia__AMBIGUOS.json"
     },
     {
       "id": "biblia__CATEGORIAS",
       "label": "CATEGORIAS",
       "kind": "array",
-      "count": 13,
+      "count": 23,
       "file": "biblia__CATEGORIAS.json"
     },
     {
@@ -62,7 +34,7 @@
       "id": "biblia__TODOS",
       "label": "TODOS",
       "kind": "array",
-      "count": 219,
+      "count": 673,
       "file": "biblia__TODOS.json"
     },
     {
@@ -118,7 +90,7 @@
       "id": "capsulas",
       "label": "Cápsulas diarias",
       "kind": "array",
-      "count": 23,
+      "count": 37,
       "file": "capsulas.json"
     },
     {
@@ -129,5 +101,7 @@
       "file": "quiz-ciberseguridad.json"
     }
   ],
-  "skipped": []
+  "skipped": [
+    "open-school/client/src/lib/catalog.ts (no existe)"
+  ]
 }
