@@ -162,7 +162,7 @@ app.post("/api/gemini/generate-lesson", rateLimit, async (req, res) => {
     const ai = getGeminiClient();
 
     if (!ai) {
-      // A placeholder with "Opción A (Correcta)" is not a real lesson.
+      // An arbitrary automatically-correct placeholder is not an educational lesson.
       res.status(503).json({
         error: "Generación de lecciones por IA no disponible en esta instalación.",
         code: "MODEL_UNAVAILABLE",
