@@ -107,7 +107,7 @@ app.post("/api/gemini/chat", rateLimit, async (req, res) => {
 He recibido tu consulta: "${message}".
 
 Recuerda que en 3º de ESO, cada paso cuenta:
-1. **Transferencia positiva**: Lo que ya sabes en portugués te abre el 85% de las puertas en español y catalán.
+1. **Transferencia positiva**: Compara ejemplos reales de portugués, español y catalán; comprueba qué palabras parecen iguales pero tienen significados diferentes.
 2. **Matemáticas**: Para despejar la incógnita 'x', recuerda equilibrar la balanza.
 3. **Vida en el instituto**: En el recreo ('pati'), la mejor forma de hacer amigos es con una sonrisa y jugando al fútbol o charlando de música.
 
@@ -162,15 +162,11 @@ app.post("/api/gemini/generate-lesson", rateLimit, async (req, res) => {
     const ai = getGeminiClient();
 
     if (!ai) {
-      res.json({
-        title: `Lección Rápida: ${topic || subject}`,
-        summary: "Enfócate en la regla clave: simplificar antes de operar y contrastar con el portugués para fijar el concepto.",
-        exercise: {
-          q: `Calcula o traduce según corresponda en ${subject}`,
-          options: ["Opción A (Correcta)", "Opción B", "Opción C"],
-          correct: 0,
-          explanation: "Excelente deducción."
-        }
+      // An arbitrary automatically-correct placeholder is not an educational lesson.
+      res.status(503).json({
+        error: "Generación de lecciones por IA no disponible en esta instalación.",
+        code: "MODEL_UNAVAILABLE",
+        fallback: "Estudia las lecciones y ejercicios verificados del campus."
       });
       return;
     }
@@ -376,7 +372,8 @@ async function startServer() {
   } else {
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
-    app.get('*', (req, res) => {
+    // Express 5 needs a named wildcard; '*' crashes at startup.
+    app.get('/{*path}', (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }

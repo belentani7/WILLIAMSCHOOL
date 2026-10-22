@@ -3,7 +3,7 @@ import { ChatMessage } from '../types';
 import { Send, Mic, MicOff, Volume2, Sparkles, User, RefreshCw, Languages, HelpCircle } from 'lucide-react';
 import { speakBelentani, stopSpeaking, playSoundSuccess, playSoundError } from '../utils/speech';
 
-export const AITutorChat: React.FC = () => {
+export const AITutorChat: React.FC<{ autoVoiceEnabled: boolean }> = ({ autoVoiceEnabled }) => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: 'init-1',
@@ -65,7 +65,7 @@ export const AITutorChat: React.FC = () => {
 
       setMessages(prev => [...prev, botMsg]);
       // Speak the answer automatically
-      speakBelentani(replyText, { lang: currentLang });
+      if (autoVoiceEnabled) speakBelentani(replyText, { lang: currentLang });
     } catch (err) {
       console.error('Chat error:', err);
       const errorMsg: ChatMessage = {
@@ -142,7 +142,7 @@ export const AITutorChat: React.FC = () => {
 
           <div>
             <h3 className="text-xl font-black text-white">BELENTANI AI</h3>
-            <p className="text-xs text-[#ff8fa3] font-medium">Guerrero & Cantante · Voz Humana Ilimitada</p>
+            <p className="text-xs text-[#ff8fa3] font-medium">Guerrero & Cantante · Síntesis de voz del navegador</p>
           </div>
 
           <div className="p-3.5 rounded-2xl bg-black/40 border border-white/10 text-xs text-zinc-300 text-left space-y-2">
@@ -151,8 +151,8 @@ export const AITutorChat: React.FC = () => {
               <span>Superpoderes del Tutor:</span>
             </div>
             <ul className="space-y-1 text-[11px] text-zinc-300">
-              <li>• <strong>5 Idiomas:</strong> Español, Catalán, Inglés, Portugués, Francés.</li>
-              <li>• <strong>Voz Humana:</strong> Lee en voz alta con entonación natural.</li>
+              <li>• <strong>4 Idiomas:</strong> Español, Catalán, Inglés y Portugués.</li>
+              <li>• <strong>Lectura:</strong> Utiliza las voces disponibles en el navegador.</li>
               <li>• <strong>Andamiaje Afectivo:</strong> Cero juicios, paciencia infinita.</li>
               <li>• <strong>Matemáticas ESO:</strong> Guía socrática paso a paso.</li>
             </ul>
@@ -314,7 +314,7 @@ export const AITutorChat: React.FC = () => {
 
           <div className="flex items-center justify-between text-[10px] text-zinc-500 px-1">
             <span>Presiona ENTER para enviar • Puedes hablar por micrófono o escribir</span>
-            <span>Tutor de Inteligencia Artificial Protegida</span>
+            <span>El modelo requiere servidor configurado · evita datos privados</span>
           </div>
         </div>
       </div>
