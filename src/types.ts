@@ -146,7 +146,6 @@ export interface ParentalSettings {
   maxDailyMinutes: number;
   usedMinutesToday: number;
   breakEveryMinutes: number;
-  parentPin: string;
   safetyShieldEnabled: boolean;
   dataVaultEncrypted: boolean;
   autoVoiceEnabled: boolean;

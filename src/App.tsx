@@ -23,35 +23,36 @@ import { Eye, ShieldCheck, Heart, Sparkles, Volume2, Monitor } from 'lucide-reac
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<NavigationTab>('academic');
-  const [studyMinutes, setStudyMinutes] = useState<number>(14);
+  const [studyMinutes, setStudyMinutes] = useState<number>(0);
   const [showEyeBreakModal, setShowEyeBreakModal] = useState<boolean>(false);
   const [isVoiceStudioOpen, setIsVoiceStudioOpen] = useState<boolean>(false);
   const [parentalSettings, setParentalSettings] = useState<ParentalSettings>({
     maxDailyMinutes: 60,
-    usedMinutesToday: 14,
+    usedMinutesToday: 0,
     breakEveryMinutes: 20,
     safetyShieldEnabled: true,
-    dataVaultEncrypted: true,
-    autoVoiceEnabled: true,
-    lastBreakTimestamp: Date.now(),
-    parentPin: '1234'
+    dataVaultEncrypted: false,
+    autoVoiceEnabled: false,
+    lastBreakTimestamp: Date.now()
   });
 
-  // Track study time and fire eye-break reminders
+  // Estimated visible-tab minutes only. Never label this an objective measure
+  // of active study or persist it across calendar days without a real clock.
   useEffect(() => {
-    const timer = setInterval(() => {
-      setStudyMinutes(prev => {
-        const updated = prev + 1;
-        setParentalSettings(ps => ({ ...ps, usedMinutesToday: updated }));
-        if (updated % parentalSettings.breakEveryMinutes === 0) {
-          setShowEyeBreakModal(true);
-        }
-        return updated;
-      });
-    }, 60000); // every minute
+    const timer = window.setInterval(() => {
+      if (document.visibilityState === 'visible') {
+        setStudyMinutes(minutes => minutes + 1);
+      }
+    }, 60_000);
+    return () => window.clearInterval(timer);
+  }, []);
 
-    return () => clearInterval(timer);
-  }, [parentalSettings.breakEveryMinutes]);
+  useEffect(() => {
+    setParentalSettings(previous => ({ ...previous, usedMinutesToday: studyMinutes }));
+    if (studyMinutes > 0 && studyMinutes % parentalSettings.breakEveryMinutes === 0) {
+      setShowEyeBreakModal(true);
+    }
+  }, [studyMinutes, parentalSettings.breakEveryMinutes]);
 
   const handleTabChange = (tab: NavigationTab) => {
     playSoundSuccess();
@@ -84,7 +85,7 @@ export default function App() {
               <div>
                 <h3 className="text-lg font-black text-slate-900">¡Momento de Descanso Ocular, Danilo!</h3>
                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                  Han pasado 20 minutos de estudio activo. Para proteger tu vista según la regla 20-20-20, mira a un punto lejano por la ventana durante 20 segundos y parpadea suavemente.
+                  Has mantenido esta pestaña visible durante otro intervalo de estudio. Como recordatorio de descanso ocular (20-20-20), mira a un punto lejano por la ventana durante 20 segundos y parpadea suavemente.
                 </p>
               </div>
               <button
@@ -110,7 +111,7 @@ export default function App() {
 
         {currentTab === 'arcade' && <ArcadeCenter />}
 
-        {currentTab === 'chat' && <AITutorChat />}
+        {currentTab === 'chat' && <AITutorChat autoVoiceEnabled={parentalSettings.autoVoiceEnabled} />}
 
         {currentTab === 'parental' && (
           <ParentalShield
@@ -139,12 +140,12 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-1.5 text-emerald-700 font-semibold">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Blindaje de Menor Activo</span>
+              <span>Preferencias locales · protección dependiente del dispositivo</span>
             </div>
             <span>•</span>
             <span className="flex items-center gap-1 text-slate-700">
               <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
-              <span>Estudio hoy: <strong className="text-slate-900">{studyMinutes} min</strong></span>
+              <span>Pestaña visible en esta sesión: <strong className="text-slate-900">{studyMinutes} min aprox.</strong></span>
             </span>
           </div>
 
