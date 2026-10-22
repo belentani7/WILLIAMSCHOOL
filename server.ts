@@ -7,7 +7,7 @@ import { GoogleGenAI } from "@google/genai";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = Number.parseInt(process.env.PORT || "3000", 10);
 
 app.use(express.json({ limit: "16kb" }));
 
@@ -376,7 +376,8 @@ async function startServer() {
   } else {
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
-    app.get('*', (req, res) => {
+    // Express 5 no longer accepts a bare '*' route pattern.
+    app.get(/.*/, (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }
