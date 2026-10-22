@@ -21,7 +21,9 @@ function fromHex(value: string): Uint8Array | null {
 function readRecord(): PinRecord | null {
   try {
     const raw = localStorage.getItem(KEY);
-    if (!raw) return null;
+    // This record is a small verifier (< 200 bytes). Never parse a huge
+    // value planted through developer tools or browser extensions.
+    if (!raw || raw.length > 1024) return null;
     const value: unknown = JSON.parse(raw);
     if (!value || typeof value !== 'object') return null;
     const p = value as Partial<PinRecord>;
