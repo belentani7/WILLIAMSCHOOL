@@ -49,3 +49,13 @@ test('tampered data and unavailable storage fail closed', async () => {
   assert.equal(await configurePin('12345678'), false);
   assert.equal(await verifyPin('12345678'), false);
 });
+
+test('oversized browser verifier fails closed before JSON parsing', async () => {
+  const fake = '{"v":1,"note":"' + 'x'.repeat(200_000) + '"}';
+  Object.defineProperty(globalThis, 'localStorage', {
+    configurable: true,
+    value: { getItem: () => fake, setItem() { throw new Error('Not allowed'); } },
+  });
+  assert.equal(pinConfigured(), false);
+  assert.equal(await verifyPin('01234567'), false);
+});
