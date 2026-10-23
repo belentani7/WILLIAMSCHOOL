@@ -31,7 +31,14 @@ La información curricular y sanitaria permanece orientativa: este PR no
 declara una evaluación clínica, cumplimiento normativo acreditado, ni que
 el sistema impida físicamente seguir usando la pantalla.
 
-## Gates antes de integrar
+## Estado de verificación observado (2026-10-23)
+
+- Head revisado: `b2d228ebe58ae4837deb55828e0a604ded96862b`.
+- GitHub Actions CI (run `39730732703`) y Security/CodeQL (run `39730732694`) terminaron en `failure`. Sus trabajos no exponen pasos ejecutados y la consulta de logs devolvió `BlobNotFound`; no hay resultados individuales de tests disponibles.
+- Vercel no aporta un resultado de compilación para este head: el bot reporta el límite diario gratuito de despliegues (`api-deployments-free-per-day`).
+- Por tanto, este documento no afirma que ningún comando local ni gate haya pasado.
+
+## Gates pendientes antes de integrar (no ejecutados en esta revisión)
 
 ```bash
 npm ci
