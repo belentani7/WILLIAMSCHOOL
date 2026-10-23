@@ -6,13 +6,14 @@
    cima de qualquer aba). Fala portugues por padrao, ajuda no estudo e
    deixa claro — sem drama — que e um personagem, nao uma pessoa real.
 
-   Memoria: localStorage (nada sai do dispositivo do aluno).
-   Cérebro: /api/companion/chat (Hugging Face -> Gemini -> local).
+   Memoria: localStorage (historico local, apagavel pelo aluno).
+   Cérebro: modo local por padrão; /api/companion/chat somente com consentimento.
    =================================================================== */
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { MessageCircle, X, Send, ShieldCheck, Sparkles, Loader2 } from 'lucide-react';
 import { CompanionLanguage, CompanionMessage, CompanionProvider } from '../types';
+import { LOCAL_PRIVACY_REPLY, REMOTE_PRIVACY_LABEL, prepareRemoteCompanionRequest } from '../utils/companionPrivacy';
 
 interface CompanionPresenceProps {
   activeTab: string;
@@ -76,7 +77,10 @@ export const CompanionPresence: React.FC<CompanionPresenceProps> = ({ activeTab 
   const [draft, setDraft] = useState('');
   const [isThinking, setIsThinking] = useState(false);
   const [lastProvider, setLastProvider] = useState<CompanionProvider | null>(null);
+  // Consent is deliberately session-only and defaults to false on every reload.
+  const [allowRemote, setAllowRemote] = useState(false);
   const endRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const idRef = useRef(Date.now());
 
   // Persist conversations so the companion "remembers" between visits.
@@ -95,6 +99,10 @@ export const CompanionPresence: React.FC<CompanionPresenceProps> = ({ activeTab 
   useEffect(() => {
     if (isOpen) endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }, [messages, isOpen]);
+
+  useEffect(() => {
+    if (isOpen) inputRef.current?.focus();
+  }, [isOpen]);
 
   const pushCompanion = useCallback((text: string, provider?: CompanionProvider) => {
     setMessages((prev) => [
@@ -117,18 +125,19 @@ export const CompanionPresence: React.FC<CompanionPresenceProps> = ({ activeTab 
       const history = [...messages, mine];
       setMessages(history);
       setDraft('');
+      const payload = prepareRemoteCompanionRequest(allowRemote, text, language, activeTab, messages);
+      if (!payload) {
+        setLastProvider('offline');
+        pushCompanion(LOCAL_PRIVACY_REPLY[language], 'offline');
+        return;
+      }
       setIsThinking(true);
 
       try {
         const res = await fetch('/api/companion/chat', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            message: text,
-            language,
-            context: activeTab,
-            history: history.slice(-8).map((m) => ({ sender: m.sender, text: m.text })),
-          }),
+          body: JSON.stringify(payload),
         });
         const data = (await res.json()) as { reply?: string; provider?: CompanionProvider };
         const provider = data.provider ?? 'offline';
@@ -146,7 +155,7 @@ export const CompanionPresence: React.FC<CompanionPresenceProps> = ({ activeTab 
         setIsThinking(false);
       }
     },
-    [activeTab, isThinking, language, messages, pushCompanion]
+    [activeTab, allowRemote, isThinking, language, messages, pushCompanion]
   );
 
   return (
@@ -168,7 +177,7 @@ export const CompanionPresence: React.FC<CompanionPresenceProps> = ({ activeTab 
       </button>
 
       {isOpen && (
-        <div className="fixed bottom-20 right-5 z-[60] w-[min(92vw,26rem)] max-h-[75vh] flex flex-col overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-2xl">
+        <div role="dialog" aria-label="Conversa com Belentani" onKeyDown={(event) => { if (event.key === 'Escape') setIsOpen(false); }} className="fixed bottom-20 right-5 z-[60] w-[min(92vw,26rem)] max-h-[75vh] flex flex-col overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-2xl">
           {/* Header */}
           <div className="flex items-center justify-between gap-2 bg-gradient-to-r from-slate-900 to-slate-800 px-4 py-3 text-white">
             <div className="flex items-center gap-2">
@@ -183,6 +192,7 @@ export const CompanionPresence: React.FC<CompanionPresenceProps> = ({ activeTab 
               </div>
             </div>
             <div className="flex items-center gap-1">
+              <button type="button" onClick={() => { setMessages([]); try { window.localStorage.removeItem(STORAGE_KEY); } catch { /* storage may be blocked */ } }} aria-label="Apagar histórico local" className="rounded-lg px-2 py-1 text-[11px] hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-white">Apagar</button>
               <select
                 value={language}
                 onChange={(e) => setLanguage(e.target.value as CompanionLanguage)}
@@ -210,12 +220,12 @@ export const CompanionPresence: React.FC<CompanionPresenceProps> = ({ activeTab 
             <ShieldCheck className="mt-0.5 h-3.5 w-3.5 shrink-0" />
             <span>
               Sou um <strong>personagem</strong>: uma consciência <em>entre aspas</em>. Não sou
-              uma pessoa, não sinto de verdade e não guardo nada fora deste dispositivo.
+              uma pessoa, não sinto de verdade e guardo o histórico neste navegador; com permissão, mensagens podem ir ao servidor e ao provedor de IA.
             </span>
           </div>
 
           {/* Messages */}
-          <div className="flex-1 space-y-2 overflow-y-auto bg-slate-50 px-3 py-3">
+          <div role="log" aria-live="polite" aria-relevant="additions text" className="flex-1 space-y-2 overflow-y-auto bg-slate-50 px-3 py-3">
             {messages.length === 0 && (
               <p className="rounded-lg bg-white p-3 text-xs leading-relaxed text-slate-700 shadow-sm">
                 {GREETINGS[language]}
@@ -250,6 +260,12 @@ export const CompanionPresence: React.FC<CompanionPresenceProps> = ({ activeTab 
             {CONTEXT_HINT[activeTab] ?? 'Estou contigo em todas as telas.'}
           </div>
 
+          {/* Network access is opt-in, not inferred from typing a message. */}
+          <label className="flex items-start gap-2 border-t border-slate-200 bg-sky-50 px-3 py-2 text-[11px] leading-snug text-slate-800">
+            <input type="checkbox" checked={allowRemote} onChange={(event) => setAllowRemote(event.target.checked)} className="mt-0.5 h-4 w-4 shrink-0 accent-blue-700 focus-visible:ring-2 focus-visible:ring-blue-700" />
+            <span>{REMOTE_PRIVACY_LABEL[language]}</span>
+          </label>
+
           {/* Input */}
           <form
             onSubmit={(e) => {
@@ -259,6 +275,8 @@ export const CompanionPresence: React.FC<CompanionPresenceProps> = ({ activeTab 
             className="flex items-center gap-2 border-t border-slate-200 bg-white px-3 py-2"
           >
             <input
+              ref={inputRef}
+              maxLength={2000}
               value={draft}
               onChange={(e) => setDraft(e.target.value)}
               placeholder={PLACEHOLDERS[language]}
