@@ -55,3 +55,11 @@ Revisar especialmente compatibilidad con el navegador del alumnado.
 
 Sin ejecución verificada de los comandos ni prueba visual **no fusionar**.
 No se modifican ni fusionan WILLIAMSCHOOL, ManosAbiertas y Open School.
+
+## Extensión 2026-10-23 — consentimiento de red del compañero
+
+`src/components/CompanionPresence.tsx` enviaba **siempre** la pregunta y hasta ocho mensajes de contexto a `/api/companion/chat`, mientras su interfaz afirmaba que nada salía del dispositivo. El servidor `server.ts` puede reenviar el contenido a Hugging Face si existe token. En un producto para menores, esto es una discrepancia de privacidad confirmada por lectura del flujo cliente/servidor.
+
+Ahora el compañero comienza **en modo local sin petición de red**; la casilla explícita de envío al servidor/proveedor se desmarca en cada recarga y limita el historial transmitido a ocho mensajes anteriores de 2000 caracteres. La nueva pregunta se incluye solo una vez. La interfaz informa del envío, permite borrar la conversación local, anuncia mensajes para lector de pantalla, recupera foco en el campo de entrada y admite Escape para cerrar el panel. **No es una garantía de privacidad del proveedor** ni sustituye una política de consentimiento para menores. El tutor académico separado `AITutorChat` sigue usando `/api/gemini/chat` y requiere revisión propia antes de publicar.
+
+Pruebas **aisladas** ejecutadas en Node 22.16.0 sobre `src/utils/companionPrivacy.ts` y `tests/companionPrivacy.test.mjs`: `node --experimental-strip-types --test tests/companionPrivacy.test.mjs` **4/4 PASS** y `tsc --noEmit --strict --target ES2022 --module ESNext --skipLibCheck src/utils/companionPrivacy.ts` **PASS** (copia exacta por SHA Git blob). No se ejecutó la suite completa, lint/build de React, navegador, lector de pantalla real ni CI con runner. Sin merge ni publicación; los gates anteriores siguen pendientes.
