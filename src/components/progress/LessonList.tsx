@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { LessonCard } from './LessonCard';
 import { ProgressData, ProgressStorage } from '../../utils/progress/storage';
-import { getNextAvailableLesson, getSubjectProgress, lessonMap } from '../../utils/progress/lessonMapper';
+import { getNextAvailableLesson, getSubjectProgress, lessonMap, type Lesson } from '../../utils/progress/lessonMapper';
 
 interface LessonListProps {
   profileId: string;
@@ -24,7 +24,7 @@ export function LessonList({ profileId, onLessonSelect }: LessonListProps) {
   }, [profileId]);
 
   const lessonsBySubject = useMemo(() => {
-    const grouped: Record<string, typeof lessonMap[string][]> = {};
+    const grouped: Record<string, Lesson[]> = {};
     for (const lesson of Object.values(lessonMap)) {
       (grouped[lesson.subject] ??= []).push(lesson);
     }
