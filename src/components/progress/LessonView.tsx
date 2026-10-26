@@ -1,6 +1,6 @@
 // src/components/progress/LessonView.tsx
 import React from 'react';
-import { Lesson } from '../../utils/progress/lessonMapper';
+import { lessonMap, Lesson } from '../../utils/progress/lessonMapper';
 
 interface LessonViewProps {
   lesson: Lesson;
