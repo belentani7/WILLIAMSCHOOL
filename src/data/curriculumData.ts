@@ -452,7 +452,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
   },
 
   // ==========================================
-  // 3º DE LA ESO (14 años - AÑO ACTUAL DE DANILO)
+  // 3º DE LA ESO (CURSO DE REFERENCIA)
   // ==========================================
   {
     id: "mates-3eso",
