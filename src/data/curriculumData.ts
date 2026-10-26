@@ -192,7 +192,7 @@ export const CULTURAL_GUIDES: CulturalGuideItem[] = [
     description: "El ritmo como puente universal entre la samba brasileña y la rumba de aquí.",
     spainHabit: "La rumba catalana (popularizada por Peret) se toca con la guitarra y el 'ventilador' rítmico con la mano, acompañado de palmas sincronizadas. La sardana es un baile circular donde todos se dan la mano.",
     brazilComparison: "La percusión corporal, el compás de las palmas y el amor por la guitarra unen directamente la música de Brasil con la rumba y el flamenco español.",
-    daniloTip: "Como a Danilo le gusta cantar y la música, aprender el compás de las palmas flamencas y rumberas será su mejor carta de presentación musical.",
+    daniloTip: "Si al estudiante le gusta cantar y la música, aprender el compás de las palmas flamencas y rumberas será su mejor carta de presentación musical.",
     audioPhrase: "El compás de la rumba catalana y el samba brasileño comparten el alma del ritmo y la alegría.",
     tags: ["Rumba", "Música", "Compás"]
   },
