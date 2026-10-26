@@ -33,6 +33,7 @@ export interface Exercise {
   correctIndex: number;
   explanation: string;
   difficulty: string;
+  portugueseTip?: string;
 }
 
 export interface SubjectModule {
