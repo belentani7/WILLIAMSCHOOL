@@ -186,7 +186,7 @@ const MATES_TITLES = [
   { t: "Potencias y Raíces Blitz", s: "Leyes de los exponentes (a^n · a^m = a^(n+m))", d: "Resuelve potencias y raíces cuadradas perfectas a ritmo de rap.", e: 'Retro Moderno' as const, diff: 'Media' as const },
   { t: "Recta Numérica Jumper", s: "Ordenación de números enteros y decimales", d: "Salta exactamente al punto indicado en la recta entre -10 y +10.", e: 'Retro Moderno' as const, diff: 'Fácil' as const },
   { t: "Radar de Coordenadas Cartesianas", s: "Puntos en el plano (x, y) en los 4 cuadrantes", d: "Detecta submarinos introduciendo las coordenadas exactas de su eco.", e: '1980s' as const, diff: 'Fácil' as const },
-  { t: "Estadística y Medias del Instituto", s: "Cálculo de la media aritmética, mediana y moda", d: "Calcula la nota media de los exámenes de Danilo para pronosticar su sobresaliente.", e: 'Retro Moderno' as const, diff: 'Fácil' as const },
+  { t: "Estadística y Medias del Instituto", s: "Cálculo de la media aritmética, mediana y moda", d: "Calcula tu nota media para practicar promedios y objetivos de mejora.", e: 'Retro Moderno' as const, diff: 'Fácil' as const },
   { t: "Probabilidad con Dados de Colores", s: "Regla de Laplace: casos favorables / casos posibles", d: "Apuesta a las probabilidades reales de combinaciones de dos dados de 6 caras.", e: 'Retro Moderno' as const, diff: 'Media' as const },
   { t: "Ecuación de Segundo Grado Fórmula", s: "Fórmula cuadrática de Bhaskara / LOMLOE", d: "Identifica los coeficientes a, b, c y halla las dos raíces reales.", e: 'Retro Moderno' as const, diff: 'Difícil' as const },
   { t: "Pendiente de la Recta y = mx + n", s: "Interpretación geométrica de la pendiente m", d: "Modifica la inclinación de la rampa cambiando el valor de m y la ordenada n.", e: 'Retro Moderno' as const, diff: 'Media' as const },
@@ -321,7 +321,7 @@ export function getAll500ClassicMiniGames(): ClassicMiniGame[] {
 
   // 5. Plataformas, Saltos & Runners (50)
   const PLATFORM_NAMES = [
-    "Super Danilo Bros 2026", "Sonic Pixel Dash Loop", "Megaman Energy Jump", "Ninja Shadow Castle Climb",
+    "Super Student Bros 2026", "Sonic Pixel Dash Loop", "Megaman Energy Jump", "Ninja Shadow Castle Climb",
     "Castlevania Stairway Quest", "Doodle Sky Cloud Hopper", "Jetpack Formula Dash", "Pitfall River Crocodile Hop",
     "Spelunky Mini Gold Cave", "Ice Climber Mountain Peak", "Prince of Persia 1989 Leap", "Celeste Mountain Chill Dash",
     "Shovel Knight Dig & Slash", "Rayman Jungle Lum Sprint", "Hollow Bug Knight Slash", "Commander Keen Galaxy Jet",
