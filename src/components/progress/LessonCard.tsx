@@ -1,7 +1,7 @@
 // src/components/progress/LessonCard.tsx
 import React from 'react';
 import { Lesson } from '../../utils/progress/lessonMapper';
-import { isLessonAvailable } from '../../utils/progress/lessonMapper';
+import { isLessonAvailable, lessonMap } from '../../utils/progress/lessonMapper';
 
 interface LessonCardProps {
   lesson: Lesson;

@@ -1,6 +1,6 @@
 // src/components/progress/LessonView.tsx
 import React from 'react';
-import { Lesson } from '../../utils/progress/lessonMapper';
+import { lessonMap, Lesson } from '../../utils/progress/lessonMapper';
 
 interface LessonViewProps {
   lesson: Lesson;
@@ -74,7 +74,7 @@ export const LessonView: React.FC<LessonViewProps> = ({
               </p>
               <textarea
                 className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                rows="4"
+                rows={4}
                 placeholder="Escribe tus respuestas aquí..."
               ></textarea>
             </div>

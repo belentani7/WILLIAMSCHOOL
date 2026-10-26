@@ -1,98 +1,86 @@
-// src/App.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { AcademicPlan } from './components/AcademicPlan';
 import { ProfileSelector } from './components/profile/ProfileSelector';
 import { LessonList } from './components/progress/LessonList';
 import { LessonView } from './components/progress/LessonView';
-import { ProgressStorage, ProgressData } from './utils/progress/storage';
+import { ProgressStorage } from './utils/progress/storage';
+import { lessonMap } from './utils/progress/lessonMapper';
 
-function App() {
-  const [profileId, setProfileId] = useState<string | null>(null);
-  const [currentLessonId, setCurrentLessonId] = useState<string | null>(null);
-  const [showLessonView, setShowLessonView] = useState(false);
+type WorkspaceTab = 'academic' | 'practice';
 
 export default function App() {
-  const [currentTab, setCurrentTab] = useState<NavigationTab>('academic');
-  const [studyMinutes, setStudyMinutes] = useState<number>(14);
-  const [showEyeBreakModal, setShowEyeBreakModal] = useState<boolean>(false);
-  const [isVoiceStudioOpen, setIsVoiceStudioOpen] = useState<boolean>(false);
-  const [parentalSettings, setParentalSettings] = useState<ParentalSettings>({
-    maxDailyMinutes: 60,
-    usedMinutesToday: 14,
-    breakEveryMinutes: 20,
-    safetyShieldEnabled: true,
-    dataVaultEncrypted: true,
-    autoVoiceEnabled: true,
-    lastBreakTimestamp: Date.now(),
-    parentPin: '1234'
-  });
+  const [activeTab, setActiveTab] = useState<WorkspaceTab>('academic');
+  const [profileId, setProfileId] = useState<string | null>(null);
+  const [currentLessonId, setCurrentLessonId] = useState<string | null>(null);
 
-  // Manejar selección de lección
-  const handleLessonSelect = (lessonId: string) => {
-    setCurrentLessonId(lessonId);
-    setShowLessonView(true);
-  };
-
-  // Manejar completado de lección
   const handleLessonComplete = (lessonId: string) => {
+    if (profileId) {
+      const progress = ProgressStorage.getProfileProgress(profileId);
+      ProgressStorage.saveProfileProgress(profileId, {
+        ...progress,
+        completedLessons: Array.from(new Set([...progress.completedLessons, lessonId])),
+        currentLesson: null,
+        lastUpdated: new Date().toISOString(),
+      });
+    }
     setCurrentLessonId(null);
-    setShowLessonView(false);
-    // El progreso se guarda automáticamente en el componente LessonList
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900">
-      <header className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <h1 className="text-2xl font-bold flex items-center">
-            <span className="mr-3">📚</span>
-            WILLIAMSCHOOL - Plataforma de Aprendizaje Personalizado
-          </h1>
-          <p className="mt-1 text-sm text-gray-500">
-            Donde cada estudiante avanza a su propio ritmo
-          </p>
+    <div className="min-h-screen bg-slate-50 text-slate-900">
+      <header className="border-b border-slate-200 bg-white shadow-sm">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 sm:px-6 lg:px-8">
+          <div>
+            <h1 className="flex items-center text-2xl font-bold tracking-tight">
+              <span className="mr-3" aria-hidden="true">📚</span>
+              WILLIAMSCHOOL
+            </h1>
+            <p className="mt-1 text-sm text-slate-600">
+              Un espacio de aprendizaje individualizado, multilingüe y orientado a competencias.
+            </p>
+          </div>
+          <nav className="flex flex-wrap gap-2" aria-label="Áreas de aprendizaje">
+            <button
+              type="button"
+              onClick={() => setActiveTab('academic')}
+              aria-current={activeTab === 'academic' ? 'page' : undefined}
+              className={`rounded-lg px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 ${activeTab === 'academic' ? 'bg-blue-700 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}`}
+            >
+              Plan académico
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab('practice')}
+              aria-current={activeTab === 'practice' ? 'page' : undefined}
+              className={`rounded-lg px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 ${activeTab === 'practice' ? 'bg-blue-700 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}`}
+            >
+              Práctica y progreso
+            </button>
+          </nav>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {profileId === null ? (
-          // Seleccionar perfil
-          <ProfileSelector onProfileSelected={handleProfileSelected} />
-        ) : showLessonView && currentLessonId !== null ? (
-          // Vista de lección específica
+      <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {activeTab === 'academic' ? (
+          <AcademicPlan />
+        ) : profileId === null ? (
+          <ProfileSelector onProfileSelected={setProfileId} />
+        ) : currentLessonId && lessonMap[currentLessonId] ? (
           <LessonView
-            lesson={
-              // Intentamos obtener la lección del mapa
-              // En una implementación real, esto vendría de un servicio o datos cargados
-              {
-                id: currentLessonId,
-                title: 'Lección Seleccionada',
-                subject: 'Variado',
-                description: 'Contenido de la lección se cargará aquí basado en el ID seleccionado.',
-                prerequisites: [],
-                estimatedTime: 30
-              } as any // En una implementación real, tiparíamos esto correctamente
-            },
-            onLessonComplete={handleLessonComplete},
-            onBackToList: () => {
-              setShowLessonView(false);
-              setCurrentLessonId(null);
-            }
-          }
+            lesson={lessonMap[currentLessonId]}
+            onLessonComplete={handleLessonComplete}
+            onBackToList={() => setCurrentLessonId(null)}
+          />
         ) : (
-          // Lista de lecciones
-          <LessonList profileId={profileId} />
+          <LessonList profileId={profileId} onLessonSelect={setCurrentLessonId} />
         )}
       </main>
 
-      <footer className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-sm text-gray-500">
-          WILLIAMSCHOOL © 2026 - Plataforma Educativa Personalizada
-          <br />
-          Hecho con ❤️ para el aprendizaje individualizado
+      <footer className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-4 text-center text-sm text-slate-500 sm:px-6 lg:px-8">
+          WILLIAMSCHOOL © 2026 · Aprendizaje individualizado
         </div>
       </footer>
     </div>
   );
 }
-
-export default App;

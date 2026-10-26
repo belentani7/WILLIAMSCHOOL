@@ -1,14 +1,15 @@
+import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+// Use Vite's built-in JSX transform; the React plugin is not declared.
 export default defineConfig({
-  plugins: [react()],
+  plugins: [tailwindcss()],
+  esbuild: { jsx: 'automatic' },
   server: {
     host: '127.0.0.1',
-    port: 5173
+    port: 5173,
   },
   preview: {
-    port: 4173
-  }
+    port: 4173,
+  },
 });
