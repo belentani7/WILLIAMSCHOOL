@@ -29,11 +29,11 @@ jobs:
           cache: pnpm
       - name: Instalar dependencias
         run: pnpm install --frozen-lockfile
-      - name: Lint
-        run: pnpm run lint --if-present
       - name: Typecheck
-        run: pnpm run typecheck --if-present
+        run: pnpm run lint
+      - name: Validar módulos
+        run: pnpm run check:modules
       - name: Tests
-        run: pnpm test --if-present
+        run: pnpm test
       - name: Build
-        run: pnpm run build --if-present
+        run: pnpm run build
