@@ -37,7 +37,7 @@ test('recommended lesson advances when prerequisites are completed', () => {
 
 test('subject progress counts known lessons only and remains consistent', () => {
   const progress = getSubjectProgress(['math-numbers', 'math-problems', 'unknown']);
-  assert.deepEqual(progress['Matemáticas'], { completed: 1, total: 2 });
+  assert.deepEqual(progress['Matemáticas'], { completed: 2, total: 2 });
   assert.deepEqual(getCompletedLessonsBySubject(['math-numbers', 'unknown', 'math-problems'], 'Matemáticas'), [
     'math-numbers',
     'math-problems',
