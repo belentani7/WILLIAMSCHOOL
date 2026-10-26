@@ -319,9 +319,9 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
           { term: "Verbo", pt: "Verbo", es: "Verbo (acción)", ca: "Verb", en: "Verb", explanation: "Acción conjugada en persona, número y tiempo." }
         ],
         interactiveExample: {
-          prompt: "Identifica el sustantivo y el verbo en: 'Danilo toca la guitarra.'",
+          prompt: "Identifica el sustantivo y el verbo en: 'el estudiante toca la guitarra.'",
           stepByStep: [
-            "1. 'Danilo' y 'guitarra' son sustantivos (personas y objetos).",
+            "1. 'el estudiante' y 'guitarra' son sustantivos (personas y objetos).",
             "2. 'Toca' es el verbo (acción en presente de tocar)."
           ],
           ruleBox: "El verbo siempre concuerda en número (singular/plural) con el sujeto."
@@ -458,7 +458,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     id: "mates-3eso",
     name: "Matemáticas 3º ESO",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "ciencias",
     icon: "Calculator",
     color: "#ff2d55",
@@ -535,7 +535,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     id: "espanol-3eso",
     name: "Lengua Española 3º ESO",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "letras",
     icon: "BookOpen",
     color: "#ff6b8b",
@@ -589,7 +589,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     id: "catalan-3eso",
     name: "Llengua Catalana 3º ESO",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "idiomas",
     icon: "GraduationCap",
     color: "#ff8fa3",
@@ -597,11 +597,11 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     topics: [
       {
         id: "c3-pont-fonetic",
-        title: "El Gran Avantatge Fonètic de William Danilo en Català",
+        title: "L'avantatge fonètic del portuguès en català",
         subtitle: "Sons brasilers idèntics que el català té i el castellà no té",
         portugueseBridge: "A sua língua materna tem a letra 'ç', o som de 'sh/ch' do X, e as vogais abertas (è, ò) que são IGUAIS ao catalão!",
         catalanBridge: "En català: La c trencada (ç), l'ela geminada (l·l) i els sons de les vocals obertes.",
-        summary: "Danilo té una oïda privilegiada: el portuguès del Brasil i el català comparteixen la rica distinció vocàlica que no existeix en castellà. Paraules com 'plaça', 'lliçó', 'sortir', 'menjar' o 'deures' s'assimilen de manera molt natural.",
+        summary: "el estudiante té una oïda privilegiada: el portuguès del Brasil i el català comparteixen la rica distinció vocàlica que no existeix en castellà. Paraules com 'plaça', 'lliçó', 'sortir', 'menjar' o 'deures' s'assimilen de manera molt natural.",
         keyConcepts: [
           { term: "Ela geminada (l·l)", pt: "L longo / duplo", es: "No existe (usa L o LL)", ca: "l·l (novel·la, col·legi)", en: "Geminate L", explanation: "Dues erres de so separat amb punt volat al mig." },
           { term: "Deures", pt: "Tarefas escolares", es: "Deberes", ca: "Deures", en: "Homework", explanation: "Exercicis per fer a casa." }
@@ -643,7 +643,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     id: "ingles-3eso",
     name: "English 3º ESO (B1 Level)",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "idiomas",
     icon: "Globe2",
     color: "#38bdf8",
@@ -661,11 +661,11 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
           { term: "For", pt: "Por / Durante (duração)", es: "Durante (periodo de tiempo)", ca: "Durant", en: "For (e.g. for 6 months)", explanation: "Identifies the total duration." }
         ],
         interactiveExample: {
-          prompt: "Complete: 'William has studied at this school _______ three months.'",
+          prompt: "Complete: 'el estudiante has studied at this school _______ three months.'",
           stepByStep: [
             "1. 'Three months' is a period of duration, not a single calendar point.",
             "2. For duration, the correct preposition is 'for'.",
-            "3. Answer: 'William has studied at this school for three months'."
+            "3. Answer: 'el estudiante has studied at this school for three months'."
           ],
           ruleBox: "Formula: Subject + have / has + Past Participle (3rd column / -ed)."
         }
@@ -703,7 +703,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     id: "ciencias-3eso",
     name: "Biología y Geología 3º ESO",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "ciencias",
     icon: "Atom",
     color: "#4ade80",
@@ -1071,7 +1071,7 @@ export const EDUTUBE_VIDEOS: EduTubeVideo[] = [
     subject: "Lengua Española & Acogida",
     course: "ESO",
     badge: "Puente Lingüístico",
-    description: "Danilo y Belentani repasan las palabras trampa más habituales: embaraçada, esquisito, oficina, propina, vassoura y apelido.",
+    description: "el estudiante y Belentani repasan las palabras trampa más habituales: embaraçada, esquisito, oficina, propina, vassoura y apelido.",
     keyTakeaway: "Aprovecha el 85% de similitudes, pero ten en alerta roja las 15 palabras trampa críticas."
   },
   {
