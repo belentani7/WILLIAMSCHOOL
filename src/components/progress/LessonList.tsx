@@ -1,67 +1,67 @@
-// src/components/progress/LessonList.tsx
-import React from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { LessonCard } from './LessonCard';
-import { ProgressStorage, ProgressData } from '../../utils/progress/storage';
-import { getNextAvailableLesson, getSubjectProgress } from '../../utils/progress/lessonMapper';
+import { ProgressData, ProgressStorage } from '../../utils/progress/storage';
+import { getNextAvailableLesson, getSubjectProgress, lessonMap } from '../../utils/progress/lessonMapper';
 
 interface LessonListProps {
   profileId: string;
+  onLessonSelect: (lessonId: string) => void;
 }
 
-export const LessonList: React.FC<LessonListProps> = ({ profileId }) => {
-  const [progress, setProgress] = React.useState<ProgressData | null>(null);
+export function LessonList({ profileId, onLessonSelect }: LessonListProps) {
+  const [progress, setProgress] = useState<ProgressData | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // Cargar progreso del perfil
-  React.useEffect(() => {
-    const loadProgress = () => {
-      const savedProgress = ProgressStorage.getProfileProgress(profileId);
-      setProgress(savedProgress);
+  useEffect(() => {
+    try {
+      setProgress(ProgressStorage.getProfileProgress(profileId));
+    } catch (error) {
+      console.error('No se pudo cargar el progreso del estudiante:', error);
+      setProgress(ProgressStorage.createDefaultProgress(profileId));
+    } finally {
       setLoading(false);
-    };
-
-    loadProgress();
+    }
   }, [profileId]);
 
-  // Manejar selección de lección
-  const handleLessonSelect = (lessonId: string) => {
-    setProgress(prev => {
-      if (!prev) return prev;
-      return {
-        ...prev,
-        currentLesson: lessonId,
-        lastUpdated: new Date().toISOString()
-      };
-    });
-    ProgressStorage.saveProfileProgress(profileId, {
-      ...prev!,
-      currentLesson: lessonId,
-      lastUpdated: new Date().toISOString()
-    });
+  const lessonsBySubject = useMemo(() => {
+    const grouped: Record<string, typeof lessonMap[string][]> = {};
+    for (const lesson of Object.values(lessonMap)) {
+      (grouped[lesson.subject] ??= []).push(lesson);
+    }
+    return grouped;
+  }, []);
+
+  const updateProgress = (next: ProgressData) => {
+    setProgress(next);
+    try {
+      ProgressStorage.saveProfileProgress(profileId, next);
+    } catch (error) {
+      console.error('No se pudo guardar el progreso del estudiante:', error);
+    }
   };
 
-  // Manejar completado de lección
-  const handleLessonComplete = (lessonId: string) => {
-    setProgress(prev => {
-      if (!prev) return prev;
-      const completedLessons = Array.from(new Set([...prev.completedLessons, lessonId]));
-      return {
-        ...prev,
-        completedLessons,
-        currentLesson: null, // Al completar una lección, no hay lección actual
-        lastUpdated: new Date().toISOString()
-      };
+  const handleLessonSelect = (lessonId: string) => {
+    if (!progress) return;
+    updateProgress({
+      ...progress,
+      currentLesson: lessonId,
+      lastUpdated: new Date().toISOString(),
     });
-    ProgressStorage.saveProfileProgress(profileId, {
-      ...prev!,
-      completedLessons: Array.from(new Set([...prev!.completedLessons, lessonId])),
+    onLessonSelect(lessonId);
+  };
+
+  const handleLessonComplete = (lessonId: string) => {
+    if (!progress) return;
+    updateProgress({
+      ...progress,
+      completedLessons: Array.from(new Set([...progress.completedLessons, lessonId])),
       currentLesson: null,
-      lastUpdated: new Date().toISOString()
+      lastUpdated: new Date().toISOString(),
     });
   };
 
   if (loading || !progress) {
-    return <div className="text-center py-8">Cargando progreso...</div>;
+    return <div className="py-8 text-center" role="status">Cargando progreso...</div>;
   }
 
   const nextLesson = getNextAvailableLesson(progress.completedLessons);
@@ -69,78 +69,50 @@ export const LessonList: React.FC<LessonListProps> = ({ profileId }) => {
 
   return (
     <div className="space-y-6">
-      {/* Resumen de progreso */}
-      <div className="bg-white p-4 rounded-lg shadow-md">
-        <h2 className="text-xl font-bold mb-4">Resumen de Progreso</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {Object.entries(subjectProgress).map(([subject, data]) => (
-            <div key={subject} className="p-3 bg-gray-50 rounded-lg">
-              <h3 className="font-semibold mb-2">{subject}</h3>
-              <div className="flex items-center">
-                <div className="flex-1">
-                  <div className="w-full bg-gray-200 rounded-full h-2.5 mb-1">
-                    <div
-                      className={`h-2.5 bg-blue-600 rounded-full transition-all duration-500 w-${Math.min(
-                        100,
-                        Math.round((data.completed / data.total) * 100)
-                      )}`}
-                    ></div>
+      <section className="rounded-lg bg-white p-4 shadow-md" aria-labelledby="progress-heading">
+        <h2 id="progress-heading" className="mb-4 text-xl font-bold">Resumen de progreso</h2>
+        {Object.keys(subjectProgress).length === 0 ? (
+          <p className="text-sm text-gray-600">Todavía no hay lecciones en el catálogo.</p>
+        ) : (
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {Object.entries(subjectProgress).map(([subject, data]) => {
+              const percentage = data.total === 0 ? 0 : Math.round((data.completed / data.total) * 100);
+              return (
+                <div key={subject} className="rounded-lg bg-gray-50 p-3">
+                  <h3 className="mb-2 font-semibold">{subject}</h3>
+                  <div className="h-2.5 w-full overflow-hidden rounded-full bg-gray-200" role="progressbar" aria-label={`Progreso de ${subject}`} aria-valuenow={percentage} aria-valuemin={0} aria-valuemax={100}>
+                    <div className="h-full rounded-full bg-blue-600 transition-all" style={{ width: `${percentage}%` }} />
                   </div>
+                  <p className="mt-1 text-xs text-gray-600">{data.completed} de {data.total} · {percentage}% completado</p>
                 </div>
-                <div className="ml-3 text-sm font-medium">
-                  {data.completed}/{data.total}
-                </div>
-              </div>
-              <p className="text-xs text-gray-500 mt-1">
-                {Math.round((data.completed / data.total) * 100)}% completado
-              </p>
-            </div>
-          ))}
-        </div>
-        
-        {nextLesson && (
-          <div className="mt-4 p-3 bg-blue-50 rounded-lg">
-            <h3 className="font-semibold mb-2">Próxima Lección Recomendada</h3>
-            <p className="text-sm">
-              {nextLesson.title} ({nextLesson.subject}) - {nextLesson.estimatedTime} min
-            </p>
-            <p className="text-xs text-gray-500 mt-1">
-              {nextLesson.description}
-            </p>
+              );
+            })}
           </div>
         )}
-      </div>
 
-      {/* Lista de lecciones */}
-      <div className="bg-white p-4 rounded-lg shadow-md">
-        <h2 className="text-xl font-bold mb-4">Lecciones Disponibles</h2>
-        
-        {/* Mensaje cuando no hay lecciones disponibles */}
-        {!Object.keys(lessonMap).length && (
-          <p className="text-center py-8 text-gray-500">
-            No hay lecciones disponibles en este momento.
-          </p>
+        {nextLesson && (
+          <div className="mt-4 rounded-lg bg-blue-50 p-3">
+            <h3 className="mb-2 font-semibold">Próxima lección recomendada</h3>
+            <p className="text-sm">{nextLesson.title} · {nextLesson.subject} · {nextLesson.estimatedTime} min</p>
+            <p className="mt-1 text-xs text-gray-600">{nextLesson.description}</p>
+            <button type="button" onClick={() => handleLessonSelect(nextLesson.id)} className="mt-3 rounded-md bg-blue-600 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+              Continuar aprendizaje
+            </button>
+          </div>
         )}
-        
-        {/* Lista de lecciones organizadas por materia */}
-        {Object.values(lessonMap).length > 0 && (
-          <div className="space-y-4">
-            {/* Agrupar lecciones por materia */}
-            {Object.entries(
-              Object.values(lessonMap).reduce((acc, lesson) => {
-                if (!acc[lesson.subject]) {
-                  acc[lesson.subject] = [];
-                }
-                acc[lesson.subject].push(lesson);
-                return acc;
-              }, {} as Record<string, Lesson[]>)
-            ).map(([subject, lessons]) => (
-              <div key={subject} className="mb-5">
-                <h3 className="text-lg font-semibold mb-3 border-b pb-2">
-                  {subject}
-                </div>
+      </section>
+
+      <section className="rounded-lg bg-white p-4 shadow-md" aria-labelledby="lessons-heading">
+        <h2 id="lessons-heading" className="mb-4 text-xl font-bold">Lecciones disponibles</h2>
+        {Object.keys(lessonMap).length === 0 ? (
+          <p className="py-8 text-center text-gray-500">No hay lecciones disponibles en este momento.</p>
+        ) : (
+          <div className="space-y-5">
+            {Object.entries(lessonsBySubject).map(([subject, lessons]) => (
+              <div key={subject}>
+                <h3 className="mb-3 border-b pb-2 text-lg font-semibold">{subject}</h3>
                 <div className="space-y-3">
-                  {lessons.map(lesson => (
+                  {lessons.map((lesson) => (
                     <LessonCard
                       key={lesson.id}
                       lesson={lesson}
@@ -151,11 +123,11 @@ export const LessonList: React.FC<LessonListProps> = ({ profileId }) => {
                     />
                   ))}
                 </div>
-              }
+              </div>
             ))}
           </div>
         )}
-      </div>
+      </section>
     </div>
   );
-};
+}
