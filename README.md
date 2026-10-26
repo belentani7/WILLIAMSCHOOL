@@ -84,12 +84,12 @@ vive en el nodo central:
 | Plataforma | Qué enseña | Enlace |
 |---|---|---|
 | Open School | Instituto digital universal | https://open-school-gamma.vercel.app |
-| ManosAbiertas | IA y ofimática para recién llegados | https://belentani7.github.io/ManosAbiertas/ |
+| ManosAbiertas | IA y ofimática para recién llegados | https://manos-abiertas-rho.vercel.app |
 | WILLIAMSCHOOL | Estudio ESO/Bachillerato + acogida BR-ES | https://williamschool-livid.vercel.app |
 | UX Academy | Diseño UX/Producto, trilingüe | https://ux-academy-professional.vercel.app |
 | Aprende Brasil | Educação para o Brasil | https://aprende-brasil.vercel.app/ |
-| Lingua Aberta | Idiomas, progresión CEFR | https://belentani7.github.io/lingua-aberta-empresa/ |
-| Cruzando el Charco | Acogida y arraigo | https://belentani7.github.io/Cruzando-el-charco/ |
-| secure-t | Ciberseguridad e IA | https://belentani7.github.io/secure-t/ |
+| Lingua Aberta | Idiomas, progresión CEFR | https://lingua-aberta.vercel.app/ |
+| Cruzando el Charco | Acogida y arraigo | https://cruzando-el-charco-web-20260812.vercel.app |
+| secure-t | Ciberseguridad e IA | https://github.com/belentani7/secure-t |
 
 **PT > ES > EN > CA.** Gratuito, accesible (WCAG) y conectado.
