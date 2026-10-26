@@ -28,7 +28,7 @@ La Biblia **no se edita aqui**. Fuente unica:
 Para publicar en este campus: `npx tsx scripts/export-biblia.mts`
 (escribe `public/modules/biblia/`). No inventar un segundo glosario.
 
-Prioridad William (2026-10-02): `open-school` + `belentani-school-unificado`.
+Prioridad educativa (2026-10-02): `open-school` + `belentani-school-unificado`.
 Fuera de alcance: `nataliamarinho`, `secure-t`. Luego: ManosAbiertas, UX Academy.
 
 ## Seguridad

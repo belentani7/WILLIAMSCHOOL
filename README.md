@@ -12,7 +12,7 @@ Brasil-España, ofimática, vídeos educativos verificados y un compañero de IA
 
 ## Qué es
 
-App de escritorio educativa (estilo "edu-OS") para un estudiante de 14 años, brasileño,
+App educativa (estilo "edu-OS") para aprendizaje individualizado de ESO/Bachillerato, multilingüe y adaptable,
 que cursa ESO en Catalunya. Cubre:
 
 - **Plan ESO/Bachillerato**: módulos por curso con puentes lingüísticos PT → ES → CA.

@@ -116,7 +116,7 @@ export const AcademicPlan: React.FC = () => {
               <span className="text-emerald-300 font-semibold">1º ESO a 2º Bachillerato (6 Cursos)</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight">
-              Material Didáctico Completo & Adaptado para William Danilo
+              Biblioteca curricular completa y adaptable
             </h2>
             <p className="text-xs md:text-sm text-sky-100 mt-1 max-w-3xl leading-relaxed">
               Explicaciones didácticas profundas, teoremas paso a paso, ejercicios resueltos y <strong className="text-white">puentes de transferencia lingüística (Português ➔ Castellano ➔ Català)</strong> para garantizar el éxito escolar sin estrés.
@@ -125,7 +125,7 @@ export const AcademicPlan: React.FC = () => {
 
           <button
             onClick={() => handleSpeakTopic(
-              "William, aquí tienes tu biblioteca curricular completa desde primero de la ESO hasta segundo de bachillerato. Cada unidad tiene explicaciones claras y ejercicios para preparar tus exámenes del instituto.",
+              "Aquí tienes una biblioteca curricular desde primero de la ESO hasta segundo de bachillerato. Cada unidad ofrece explicaciones claras y ejercicios para preparar los exámenes del instituto.",
               'es'
             )}
             className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white text-blue-900 hover:bg-blue-50 font-bold text-xs shadow-md transition-all shrink-0"
@@ -324,7 +324,7 @@ export const AcademicPlan: React.FC = () => {
                   {activeTopic.portugueseBridge && (
                     <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs space-y-1">
                       <div className="font-bold flex items-center gap-1.5 text-emerald-800">
-                        <span>🇧🇷 Puente Português (Danilo):</span>
+                        <span>🇧🇷 Puente de portugués:</span>
                       </div>
                       <p className="leading-relaxed">{activeTopic.portugueseBridge}</p>
                     </div>
@@ -471,7 +471,7 @@ export const AcademicPlan: React.FC = () => {
                           isCorrect ? 'bg-emerald-50 text-emerald-900 border border-emerald-200' : 'bg-rose-50 text-rose-900 border border-rose-200'
                         }`}>
                           <div className="font-bold mb-0.5">
-                            {isCorrect ? '¡Excelente deducción, Danilo! 🎉' : '¡Casi! Repasemos la regla:'}
+                            {isCorrect ? '¡Excelente deducción! 🎉' : '¡Casi! Repasemos la regla:'}
                           </div>
                           <p>{ex.explanation}</p>
                           {ex.portugueseTip && (

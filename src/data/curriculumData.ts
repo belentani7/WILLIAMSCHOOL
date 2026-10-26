@@ -156,7 +156,7 @@ export const CULTURAL_GUIDES: CulturalGuideItem[] = [
     description: "La jornada escolar, los dos recreos ('pati') y las horas de comida y cena.",
     spainHabit: "Las clases empiezan a las 8:00 en punto. El recreo es sobre las 11:00 (se come un bocadillo). La comida familiar es a las 14:30 o 15:00, y la cena es tardía: de 21:00 a 22:00.",
     brazilComparison: "En Brasil se come habitualmente a las 12:00 y se cena a las 19:00. Aquí las tardes son mucho más largas y la vida social en la calle se alarga con la luz solar.",
-    daniloTip: "Lleva siempre tu bocadillo ('entrepà' en catalán) en la mochila para el recreo. Es el momento perfecto para charlar con compañeros de clase.",
+    studentTip: "Lleva siempre tu bocadillo ('entrepà' en catalán) en la mochila para el recreo. Es el momento perfecto para charlar con compañeros de clase.",
     audioPhrase: "El timbre suena a las ocho en punto y a las once salimos al patio a comer el bocadillo.",
     tags: ["Horarios", "Instituto", "Pati"]
   },
@@ -168,7 +168,7 @@ export const CULTURAL_GUIDES: CulturalGuideItem[] = [
     description: "Cómo dirigirse a los profesores y cómo hacer amigos en el recreo.",
     spainHabit: "En España y Cataluña es habitual tutear a los profesores por su nombre de pila en el instituto, manteniendo siempre un tono educado. Los estudiantes hablan con voz enérgica y gestos abiertos.",
     brazilComparison: "En Brasil a veces se usa 'Professor' o 'Senhor/Senhora'. En España el tuteo con respeto genera mucha confianza entre alumno y docente.",
-    daniloTip: "Si alguien habla en voz alta o gesticula mucho, no está enfadado: es la expresividad mediterránea habitual. Un choque de manos o una sonrisa abre cualquier conversación.",
+    studentTip: "Si alguien habla en voz alta o gesticula mucho, no está enfadado: es la expresividad mediterránea habitual. Un choque de manos o una sonrisa abre cualquier conversación.",
     audioPhrase: "En el instituto nos ayudamos todos en los trabajos en grupo.",
     tags: ["Profesores", "Compañeros", "Tuteo"]
   },
@@ -180,7 +180,7 @@ export const CULTURAL_GUIDES: CulturalGuideItem[] = [
     description: "Las grandes tradiciones que unen la lectura, el fuego y el trabajo en equipo.",
     spainHabit: "El 23 de abril es Sant Jordi: las calles se llenan de rosas rojas y libros. En verano se celebran los Castellers (torres humanas que simbolizan fuerza, equilibrio y confianza) y la noche de San Juan con hogueras.",
     brazilComparison: "Igual que las fiestas juninas en Brasil tienen música, fuego y comunidad, San Juan y las fiestas mayores catalanas tienen 'correfocs' y plazas llenas de música.",
-    daniloTip: "Para Sant Jordi regalar un libro o una rosa es el gesto más bonito de aprecio entre amigos y compañeros.",
+    studentTip: "Para Sant Jordi regalar un libro o una rosa es el gesto más bonito de aprecio entre amigos y compañeros.",
     audioPhrase: "Per Sant Jordi regalem llibres i roses, i a l'estiu veiem castellers a la plaça.",
     tags: ["Sant Jordi", "Castellers", "Tradició"]
   },
@@ -192,7 +192,7 @@ export const CULTURAL_GUIDES: CulturalGuideItem[] = [
     description: "El ritmo como puente universal entre la samba brasileña y la rumba de aquí.",
     spainHabit: "La rumba catalana (popularizada por Peret) se toca con la guitarra y el 'ventilador' rítmico con la mano, acompañado de palmas sincronizadas. La sardana es un baile circular donde todos se dan la mano.",
     brazilComparison: "La percusión corporal, el compás de las palmas y el amor por la guitarra unen directamente la música de Brasil con la rumba y el flamenco español.",
-    daniloTip: "Como a Danilo le gusta cantar y la música, aprender el compás de las palmas flamencas y rumberas será su mejor carta de presentación musical.",
+    studentTip: "Si al estudiante le gusta cantar y la música, aprender el compás de las palmas flamencas y rumberas será su mejor carta de presentación musical.",
     audioPhrase: "El compás de la rumba catalana y el samba brasileño comparten el alma del ritmo y la alegría.",
     tags: ["Rumba", "Música", "Compás"]
   },
@@ -204,21 +204,21 @@ export const CULTURAL_GUIDES: CulturalGuideItem[] = [
     description: "Cómo funciona la escala oficial de 1 a 10 en España y qué necesitas para promocionar de curso.",
     spainHabit: "La escala va del 1 al 10. Del 1 al 4 es 'Insuficiente' (suspenso). El 5 es 'Suficiente' (aprobado raspado). 6 es 'Bien'. 7 y 8 es 'Notable'. 9 y 10 es 'Sobresaliente'. Se promociona a 4º de ESO si apruebas todo o con un máximo de 2 suspensas (que no sean Lengua y Mates simultáneamente).",
     brazilComparison: "En Brasil las notas van del 0 al 10 o letras (A, B, C, D). En España el 5 es la frontera de oro. Sacar un 7 u 8 se considera un gran logro (Notable).",
-    daniloTip: "Si sacas un 4.5 en un examen, no te desanimes: en España siempre hay 'recuperaciones' a final de trimestre para subir al 5 o más.",
+    studentTip: "Si sacas un 4.5 en un examen, no te desanimes: en España siempre hay 'recuperaciones' a final de trimestre para subir al 5 o más.",
     audioPhrase: "Para aprobar la asignatura necesitamos mínimo un cinco, y con esfuerzo llegamos al notable o sobresaliente.",
     tags: ["Notas", "LOMLOE", "Evaluación", "3º ESO"]
   },
   {
     id: "cultura-jerga-patio",
     category: "lenguaje_instituto",
-    title: "El Código Secreto del Patio: Jerga Juvenil a los 14 Años",
+    title: "El Código Secreto del Patio: Jerga Juvenil Adolescente",
     icon: "MessageCircle",
     description: "Las expresiones que escucharás en el recreo de los chicos y chicas de tu edad.",
     spainHabit: "Palabras como 'chaval', 'mola mazo', 'flipar', 'rayarse', 'tío/tía' y 'liarse' forman parte de la conversación diaria entre amigos en el recreo.",
     brazilComparison: "Equivalen a 'mano', 'galera', 'da hora', 'pirar', 'ficar noiado' y 'fazer besteira'. Tienen exactamente la misma función de complicidad juvenil.",
-    daniloTip: "No intentes forzarlas el primer día; escúchalas de forma natural y cuando menos lo esperes las estarás usando con tus nuevos amigos.",
+    studentTip: "No intentes forzarlas el primer día; escúchalas de forma natural y cuando menos lo esperes las estarás usando con tus nuevos amigos.",
     audioPhrase: "Ese gol mola un montón, tío, no te rayes con el examen de mañana.",
-    tags: ["Jerga", "Patio", "Chavales", "14 Años"]
+    tags: ["Jerga", "Patio", "Chavales", "Adolescencia"]
   }
 ];
 
@@ -319,9 +319,9 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
           { term: "Verbo", pt: "Verbo", es: "Verbo (acción)", ca: "Verb", en: "Verb", explanation: "Acción conjugada en persona, número y tiempo." }
         ],
         interactiveExample: {
-          prompt: "Identifica el sustantivo y el verbo en: 'Danilo toca la guitarra.'",
+          prompt: "Identifica el sustantivo y el verbo en: 'el estudiante toca la guitarra.'",
           stepByStep: [
-            "1. 'Danilo' y 'guitarra' son sustantivos (personas y objetos).",
+            "1. 'el estudiante' y 'guitarra' son sustantivos (personas y objetos).",
             "2. 'Toca' es el verbo (acción en presente de tocar)."
           ],
           ruleBox: "El verbo siempre concuerda en número (singular/plural) con el sujeto."
@@ -452,13 +452,13 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
   },
 
   // ==========================================
-  // 3º DE LA ESO (14 años - AÑO ACTUAL DE DANILO)
+  // 3º DE LA ESO (CURSO DE REFERENCIA)
   // ==========================================
   {
     id: "mates-3eso",
     name: "Matemáticas 3º ESO",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "ciencias",
     icon: "Calculator",
     color: "#ff2d55",
@@ -535,7 +535,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     id: "espanol-3eso",
     name: "Lengua Española 3º ESO",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "letras",
     icon: "BookOpen",
     color: "#ff6b8b",
@@ -589,7 +589,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     id: "catalan-3eso",
     name: "Llengua Catalana 3º ESO",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "idiomas",
     icon: "GraduationCap",
     color: "#ff8fa3",
@@ -597,11 +597,11 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     topics: [
       {
         id: "c3-pont-fonetic",
-        title: "El Gran Avantatge Fonètic de William Danilo en Català",
+        title: "L'avantatge fonètic del portuguès en català",
         subtitle: "Sons brasilers idèntics que el català té i el castellà no té",
         portugueseBridge: "A sua língua materna tem a letra 'ç', o som de 'sh/ch' do X, e as vogais abertas (è, ò) que são IGUAIS ao catalão!",
         catalanBridge: "En català: La c trencada (ç), l'ela geminada (l·l) i els sons de les vocals obertes.",
-        summary: "Danilo té una oïda privilegiada: el portuguès del Brasil i el català comparteixen la rica distinció vocàlica que no existeix en castellà. Paraules com 'plaça', 'lliçó', 'sortir', 'menjar' o 'deures' s'assimilen de manera molt natural.",
+        summary: "el estudiante té una oïda privilegiada: el portuguès del Brasil i el català comparteixen la rica distinció vocàlica que no existeix en castellà. Paraules com 'plaça', 'lliçó', 'sortir', 'menjar' o 'deures' s'assimilen de manera molt natural.",
         keyConcepts: [
           { term: "Ela geminada (l·l)", pt: "L longo / duplo", es: "No existe (usa L o LL)", ca: "l·l (novel·la, col·legi)", en: "Geminate L", explanation: "Dues erres de so separat amb punt volat al mig." },
           { term: "Deures", pt: "Tarefas escolares", es: "Deberes", ca: "Deures", en: "Homework", explanation: "Exercicis per fer a casa." }
@@ -643,7 +643,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     id: "ingles-3eso",
     name: "English 3º ESO (B1 Level)",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "idiomas",
     icon: "Globe2",
     color: "#38bdf8",
@@ -661,11 +661,11 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
           { term: "For", pt: "Por / Durante (duração)", es: "Durante (periodo de tiempo)", ca: "Durant", en: "For (e.g. for 6 months)", explanation: "Identifies the total duration." }
         ],
         interactiveExample: {
-          prompt: "Complete: 'William has studied at this school _______ three months.'",
+          prompt: "Complete: 'el estudiante has studied at this school _______ three months.'",
           stepByStep: [
             "1. 'Three months' is a period of duration, not a single calendar point.",
             "2. For duration, the correct preposition is 'for'.",
-            "3. Answer: 'William has studied at this school for three months'."
+            "3. Answer: 'el estudiante has studied at this school for three months'."
           ],
           ruleBox: "Formula: Subject + have / has + Past Participle (3rd column / -ed)."
         }
@@ -703,7 +703,7 @@ export const ACADEMIC_MODULES: SubjectModule[] = [
     id: "ciencias-3eso",
     name: "Biología y Geología 3º ESO",
     year: "3eso",
-    yearLabel: "3º de ESO (14 años - Curso de Danilo)",
+    yearLabel: "3º de ESO (curso de referencia)",
     category: "ciencias",
     icon: "Atom",
     color: "#4ade80",
@@ -1071,7 +1071,7 @@ export const EDUTUBE_VIDEOS: EduTubeVideo[] = [
     subject: "Lengua Española & Acogida",
     course: "ESO",
     badge: "Puente Lingüístico",
-    description: "Danilo y Belentani repasan las palabras trampa más habituales: embaraçada, esquisito, oficina, propina, vassoura y apelido.",
+    description: "el estudiante y Belentani repasan las palabras trampa más habituales: embaraçada, esquisito, oficina, propina, vassoura y apelido.",
     keyTakeaway: "Aprovecha el 85% de similitudes, pero ten en alerta roja las 15 palabras trampa críticas."
   },
   {

@@ -73,7 +73,7 @@ export interface CulturalGuideItem {
   description: string;
   spainHabit: string;
   brazilComparison: string;
-  daniloTip: string;
+  studentTip: string;
   audioPhrase: string;
   tags: string[];
 }
