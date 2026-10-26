@@ -1,3 +1,9 @@
+> **Ojo con el dominio.** La instancia publicada de esta plataforma es
+> <https://williamschool-livid.vercel.app> (título: *Belentani School — Plataforma ESO y
+> Tutoría Cultural*). El dominio `williamschool.vercel.app` **no pertenece a este
+> proyecto**: sirve el sitio de un centro escolar de Nepal (William Public School,
+> Sunakhoti, Lalitpur). No lo uses como enlace ni lo cites como despliegue propio.
+
 # WILLIAMSCHOOL
 
 Plataforma de estudio personal: ESO/Bachillerato (España) con acogida cultural
