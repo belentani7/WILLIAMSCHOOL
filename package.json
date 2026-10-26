@@ -10,7 +10,7 @@
     "clean": "node -e \"const fs=require('node:fs'); for (const p of ['dist','server.js']) fs.rmSync(p,{recursive:true,force:true})\"",
     "lint": "tsc --noEmit",
     "check:modules": "node scripts/validate-modules.mjs",
-    "test": "node --test tests/"
+    "test": "node --test tests/*.test.ts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
