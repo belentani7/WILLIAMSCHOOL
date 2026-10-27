@@ -6,11 +6,13 @@ import { getNextAvailableLesson, getSubjectProgress, lessonMap, type Lesson } fr
 interface LessonListProps {
   profileId: string;
   onLessonSelect: (lessonId: string) => void;
+  onStorageWarning?: () => void;
 }
 
-export function LessonList({ profileId, onLessonSelect }: LessonListProps) {
+export function LessonList({ profileId, onLessonSelect, onStorageWarning }: LessonListProps) {
   const [progress, setProgress] = useState<ProgressData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [storageWarning, setStorageWarning] = useState(false);
 
   useEffect(() => {
     try {
@@ -33,11 +35,9 @@ export function LessonList({ profileId, onLessonSelect }: LessonListProps) {
 
   const updateProgress = (next: ProgressData) => {
     setProgress(next);
-    try {
-      ProgressStorage.saveProfileProgress(profileId, next);
-    } catch (error) {
-      console.error('No se pudo guardar el progreso del estudiante:', error);
-    }
+    const persisted = ProgressStorage.saveProfileProgress(profileId, next);
+    setStorageWarning(!persisted);
+    if (!persisted) onStorageWarning?.();
   };
 
   const handleLessonSelect = (lessonId: string) => {
@@ -69,6 +69,7 @@ export function LessonList({ profileId, onLessonSelect }: LessonListProps) {
 
   return (
     <div className="space-y-6">
+      {storageWarning && <p role="alert" className="rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900">No se puede guardar el progreso en este navegador. Los cambios solo estarán disponibles mientras mantengas abierta esta pestaña.</p>}
       <section className="rounded-lg bg-white p-4 shadow-md" aria-labelledby="progress-heading">
         <h2 id="progress-heading" className="mb-4 text-xl font-bold">Resumen de progreso</h2>
         {Object.keys(subjectProgress).length === 0 ? (

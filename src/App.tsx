@@ -12,16 +12,18 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<WorkspaceTab>('academic');
   const [profileId, setProfileId] = useState<string | null>(null);
   const [currentLessonId, setCurrentLessonId] = useState<string | null>(null);
+  const [storageWarning, setStorageWarning] = useState(false);
 
   const handleLessonComplete = (lessonId: string) => {
     if (profileId) {
       const progress = ProgressStorage.getProfileProgress(profileId);
-      ProgressStorage.saveProfileProgress(profileId, {
+      const persisted = ProgressStorage.saveProfileProgress(profileId, {
         ...progress,
         completedLessons: Array.from(new Set([...progress.completedLessons, lessonId])),
         currentLesson: null,
         lastUpdated: new Date().toISOString(),
       });
+      setStorageWarning(!persisted);
     }
     setCurrentLessonId(null);
   };
@@ -61,10 +63,11 @@ export default function App() {
       </header>
 
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {storageWarning && <p role="alert" className="mb-4 rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900">No se puede guardar el progreso en este navegador. Los cambios solo estarán disponibles mientras mantengas abierta esta pestaña.</p>}
         {activeTab === 'academic' ? (
           <AcademicPlan />
         ) : profileId === null ? (
-          <ProfileSelector onProfileSelected={setProfileId} />
+          <ProfileSelector onProfileSelected={setProfileId} onStorageWarning={() => setStorageWarning(true)} />
         ) : currentLessonId && lessonMap[currentLessonId] ? (
           <LessonView
             lesson={lessonMap[currentLessonId]}
@@ -72,7 +75,7 @@ export default function App() {
             onBackToList={() => setCurrentLessonId(null)}
           />
         ) : (
-          <LessonList profileId={profileId} onLessonSelect={setCurrentLessonId} />
+          <LessonList profileId={profileId} onLessonSelect={setCurrentLessonId} onStorageWarning={() => setStorageWarning(true)} />
         )}
       </main>
 

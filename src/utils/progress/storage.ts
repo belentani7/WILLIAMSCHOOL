@@ -11,36 +11,50 @@ interface StoredProgress {
 
 export class ProgressStorage {
   static readonly STORAGE_KEY = 'williamschool_progress';
+  // Only used when the browser refuses persistence; never presented as durable.
+  private static readonly sessionProgress = new Map<string, ProgressData>();
 
-  static getProfileProgress(profileId: string): ProgressData {
-    try {
-      const stored = this.readStore();
-      const progress = stored.profiles[profileId];
-      if (!progress || !Array.isArray(progress.completedLessons)) {
-        return this.createDefaultProgress(profileId);
-      }
-      return {
-        ...this.createDefaultProgress(profileId),
-        ...progress,
-        profileId,
-        completedLessons: progress.completedLessons.filter((id): id is string => typeof id === 'string'),
-        currentLesson: typeof progress.currentLesson === 'string' ? progress.currentLesson : null,
-      };
-    } catch (error) {
-      console.error('No se pudo leer el progreso guardado:', error);
-      return this.createDefaultProgress(profileId);
-    }
+  static listProfileIds(): string[] {
+    return Array.from(new Set([
+      ...Object.keys(this.readStore()?.profiles ?? {}),
+      ...this.sessionProgress.keys(),
+    ]));
   }
 
-  static saveProfileProgress(profileId: string, progress: ProgressData): void {
-    const stored = this.readStore();
-    stored.profiles[profileId] = {
+  static getProfileProgress(profileId: string): ProgressData {
+    const stored = this.sessionProgress.get(profileId) ?? this.readStore()?.profiles[profileId];
+    if (!stored || !Array.isArray(stored.completedLessons)) {
+      return this.createDefaultProgress(profileId);
+    }
+    return {
+      ...this.createDefaultProgress(profileId),
+      ...stored,
+      profileId,
+      completedLessons: stored.completedLessons.filter((id): id is string => typeof id === 'string'),
+      currentLesson: typeof stored.currentLesson === 'string' ? stored.currentLesson : null,
+    };
+  }
+
+  /** Returns false if progress is available only in memory for this tab. */
+  static saveProfileProgress(profileId: string, progress: ProgressData): boolean {
+    const next: ProgressData = {
       ...progress,
       profileId,
       completedLessons: Array.from(new Set(progress.completedLessons)),
       lastUpdated: new Date().toISOString(),
     };
-    localStorage.setItem(this.STORAGE_KEY, JSON.stringify(stored));
+    try {
+      const stored = this.readStore();
+      if (!stored) throw new Error('No se puede leer el progreso anterior');
+      stored.profiles[profileId] = next;
+      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(stored));
+      this.sessionProgress.delete(profileId);
+      return true;
+    } catch {
+      // Safari private mode, disabled storage and quota limits must not crash study.
+      this.sessionProgress.set(profileId, next);
+      return false;
+    }
   }
 
   static createDefaultProgress(profileId: string): ProgressData {
@@ -52,11 +66,10 @@ export class ProgressStorage {
     };
   }
 
-  private static readStore(): StoredProgress {
-    const raw = localStorage.getItem(this.STORAGE_KEY);
-    if (!raw) return { profiles: {} };
-
+  private static readStore(): StoredProgress | null {
     try {
+      const raw = localStorage.getItem(this.STORAGE_KEY);
+      if (!raw) return { profiles: {} };
       const parsed: unknown = JSON.parse(raw);
       if (
         typeof parsed === 'object' &&
@@ -68,10 +81,10 @@ export class ProgressStorage {
       ) {
         return { profiles: parsed.profiles as Record<string, ProgressData> };
       }
-    } catch (error) {
-      console.error('El almacenamiento de progreso contiene JSON inválido:', error);
+    } catch {
+      // Damaged JSON or blocked reads: never overwrite an unreadable document.
+      return null;
     }
-
-    return { profiles: {} };
+    return null;
   }
 }
