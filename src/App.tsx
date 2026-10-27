@@ -67,7 +67,7 @@ export default function App() {
         {activeTab === 'academic' ? (
           <AcademicPlan />
         ) : profileId === null ? (
-          <ProfileSelector onProfileSelected={setProfileId} />
+          <ProfileSelector onProfileSelected={setProfileId} onStorageWarning={() => setStorageWarning(true)} />
         ) : currentLessonId && lessonMap[currentLessonId] ? (
           <LessonView
             lesson={lessonMap[currentLessonId]}
@@ -75,7 +75,7 @@ export default function App() {
             onBackToList={() => setCurrentLessonId(null)}
           />
         ) : (
-          <LessonList profileId={profileId} onLessonSelect={setCurrentLessonId} />
+          <LessonList profileId={profileId} onLessonSelect={setCurrentLessonId} onStorageWarning={() => setStorageWarning(true)} />
         )}
       </main>
 

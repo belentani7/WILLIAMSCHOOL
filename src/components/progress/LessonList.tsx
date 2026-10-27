@@ -6,9 +6,10 @@ import { getNextAvailableLesson, getSubjectProgress, lessonMap, type Lesson } fr
 interface LessonListProps {
   profileId: string;
   onLessonSelect: (lessonId: string) => void;
+  onStorageWarning?: () => void;
 }
 
-export function LessonList({ profileId, onLessonSelect }: LessonListProps) {
+export function LessonList({ profileId, onLessonSelect, onStorageWarning }: LessonListProps) {
   const [progress, setProgress] = useState<ProgressData | null>(null);
   const [loading, setLoading] = useState(true);
   const [storageWarning, setStorageWarning] = useState(false);
@@ -34,7 +35,9 @@ export function LessonList({ profileId, onLessonSelect }: LessonListProps) {
 
   const updateProgress = (next: ProgressData) => {
     setProgress(next);
-    setStorageWarning(!ProgressStorage.saveProfileProgress(profileId, next));
+    const persisted = ProgressStorage.saveProfileProgress(profileId, next);
+    setStorageWarning(!persisted);
+    if (!persisted) onStorageWarning?.();
   };
 
   const handleLessonSelect = (lessonId: string) => {

@@ -4,6 +4,7 @@ import { ProgressStorage, ProgressData } from '../../utils/progress/storage';
 
 interface ProfileSelectorProps {
   onProfileSelected: (profileId: string) => void;
+  onStorageWarning?: () => void;
 }
 
 interface ProfileSelectorState {
@@ -11,7 +12,7 @@ interface ProfileSelectorState {
   profileName: string;
 }
 
-export const ProfileSelector: React.FC<ProfileSelectorProps> = ({ onProfileSelected }) => {
+export const ProfileSelector: React.FC<ProfileSelectorProps> = ({ onProfileSelected, onStorageWarning }) => {
   const [state, setState] = useState<ProfileSelectorState>({
     profileId: '',
     profileName: ''
@@ -45,7 +46,9 @@ export const ProfileSelector: React.FC<ProfileSelectorProps> = ({ onProfileSelec
 
     const profileId = `profile-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
     const newProfile: ProgressData = ProgressStorage.createDefaultProgress(profileId);
-    setStorageWarning(!ProgressStorage.saveProfileProgress(profileId, newProfile));
+    const persisted = ProgressStorage.saveProfileProgress(profileId, newProfile);
+    setStorageWarning(!persisted);
+    if (!persisted) onStorageWarning?.();
 
     setProfiles(prev => [...prev, profileId]);
     setState({
