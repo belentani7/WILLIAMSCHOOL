@@ -18,16 +18,12 @@ export const ProfileSelector: React.FC<ProfileSelectorProps> = ({ onProfileSelec
   });
 
   const [profiles, setProfiles] = useState<string[]>([]);
+  const [storageWarning, setStorageWarning] = useState(false);
 
   // Cargar perfiles existentes del localStorage
   const loadProfiles = () => {
     try {
-      const data = localStorage.getItem(ProgressStorage.STORAGE_KEY);
-      if (data) {
-        const parsed = JSON.parse(data);
-        const profileIds = Object.keys(parsed.profiles || {});
-        setProfiles(profileIds);
-      }
+      setProfiles(ProgressStorage.listProfileIds());
     } catch (error) {
       console.error('Error al cargar perfiles:', error);
     }
@@ -49,7 +45,7 @@ export const ProfileSelector: React.FC<ProfileSelectorProps> = ({ onProfileSelec
 
     const profileId = `profile-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
     const newProfile: ProgressData = ProgressStorage.createDefaultProgress(profileId);
-    ProgressStorage.saveProfileProgress(profileId, newProfile);
+    setStorageWarning(!ProgressStorage.saveProfileProgress(profileId, newProfile));
 
     setProfiles(prev => [...prev, profileId]);
     setState({
@@ -75,6 +71,7 @@ export const ProfileSelector: React.FC<ProfileSelectorProps> = ({ onProfileSelec
   return (
     <div className="mb-6 p-4 bg-white rounded-lg shadow-md">
       <h2 className="text-xl font-bold mb-4">Seleccionar Perfil de Estudiante</h2>
+      {storageWarning && <p role="alert" className="mb-4 rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900">El navegador ha bloqueado el guardado. Este perfil solo estará disponible mientras mantengas abierta esta pestaña.</p>}
       
       {profiles.length > 0 && (
         <div className="mb-4">
@@ -95,7 +92,7 @@ export const ProfileSelector: React.FC<ProfileSelectorProps> = ({ onProfileSelec
                 <div className="flex-1">
                   <p className="font-medium">Perfil {profileId.slice(0, 8)}...</p>
                   <p className="text-sm text-gray-500">
-                    Último acceso: {new Date().toLocaleDateString()}
+                    Progreso guardado en este navegador (si el almacenamiento está disponible)
                   </p>
                 </div>
                 {state.profileId === profileId && (
