@@ -62,3 +62,13 @@ test('temporary storage quota failure can recover and persist the newest progres
   assert.deepEqual(JSON.parse(writable.get(ProgressStorage.STORAGE_KEY)!).profiles[profileId].completedLessons, ['math-numbers', 'math-problems']);
   assert.equal(data.size, 0);
 });
+
+test('blocked reads never overwrite other profiles with an empty document', () => {
+  const data = mockStorage({ blockRead: true });
+  const profileId = 'session-read-blocked';
+  assert.equal(ProgressStorage.saveProfileProgress(profileId, {
+    ...ProgressStorage.createDefaultProgress(profileId), completedLessons: ['math-numbers'],
+  }), false);
+  assert.equal(data.has(ProgressStorage.STORAGE_KEY), false);
+  assert.deepEqual(ProgressStorage.getProfileProgress(profileId).completedLessons, ['math-numbers']);
+});

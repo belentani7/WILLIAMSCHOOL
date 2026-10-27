@@ -16,13 +16,13 @@ export class ProgressStorage {
 
   static listProfileIds(): string[] {
     return Array.from(new Set([
-      ...Object.keys(this.readStore().profiles),
+      ...Object.keys(this.readStore()?.profiles ?? {}),
       ...this.sessionProgress.keys(),
     ]));
   }
 
   static getProfileProgress(profileId: string): ProgressData {
-    const stored = this.sessionProgress.get(profileId) ?? this.readStore().profiles[profileId];
+    const stored = this.sessionProgress.get(profileId) ?? this.readStore()?.profiles[profileId];
     if (!stored || !Array.isArray(stored.completedLessons)) {
       return this.createDefaultProgress(profileId);
     }
@@ -45,6 +45,7 @@ export class ProgressStorage {
     };
     try {
       const stored = this.readStore();
+      if (!stored) throw new Error('No se puede leer el progreso anterior');
       stored.profiles[profileId] = next;
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(stored));
       this.sessionProgress.delete(profileId);
@@ -65,7 +66,7 @@ export class ProgressStorage {
     };
   }
 
-  private static readStore(): StoredProgress {
+  private static readStore(): StoredProgress | null {
     try {
       const raw = localStorage.getItem(this.STORAGE_KEY);
       if (!raw) return { profiles: {} };
@@ -81,8 +82,9 @@ export class ProgressStorage {
         return { profiles: parsed.profiles as Record<string, ProgressData> };
       }
     } catch {
-      // Damaged JSON or blocked reads: continue in session-only mode.
+      // Damaged JSON or blocked reads: never overwrite an unreadable document.
+      return null;
     }
-    return { profiles: {} };
+    return null;
   }
 }
