@@ -60,6 +60,7 @@ export default function App() {
             >
               Práctica y progreso
             </button>
+            <a href="/itinerarios/index.html" className="rounded-lg px-4 py-2 text-sm font-semibold bg-emerald-950 text-white">Cursos completos ↗</a>
           </nav>
         </div>
       </header>
