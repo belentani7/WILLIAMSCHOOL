@@ -1,0 +1,46 @@
+/* BELENTANI Education institutional theme — limited to WILLIAMSCHOOL's new front door. */
+:root{--edu-paper:#f6f6f0;--edu-deep:#174a3b;--edu-ink:#1e3b34;--edu-line:#d6e0d7;--edu-muted:#4e6358}
+.edu-page{background:var(--edu-paper);color:var(--edu-ink)}
+.edu-skip{position:absolute;top:-6rem;left:1rem;z-index:100;background:white;color:#162b25;padding:.8rem;box-shadow:0 0 0 2px var(--edu-deep)}
+.edu-skip:focus{top:1rem}
+.edu-header{background:#f6f6f0f5;box-shadow:none;border-color:var(--edu-line)}
+.edu-brand{display:flex;align-items:center;gap:.8rem;color:var(--edu-ink);text-decoration:none}
+.edu-brand span{display:grid;gap:.14rem}
+.edu-brand strong{font-weight:760;letter-spacing:-.025em;line-height:1.1;font-size:1.04rem}
+.edu-brand small{font-size:.67rem;letter-spacing:.13em;color:var(--edu-muted);font-weight:700}
+.edu-hero{border-bottom:1px solid var(--edu-line)}
+.edu-hero-grid{display:grid;grid-template-columns:1.14fr .86fr;gap:clamp(2rem,6vw,6rem);width:min(1240px,calc(100% - 3rem));margin:auto;padding:clamp(3.5rem,8vw,7rem) 0}
+.edu-hero-copy{align-self:center}
+.edu-eyebrow{font:750 .77rem/1.6 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#176758;margin:0 0 1.4rem}
+.edu-hero h1,.edu-paths h2,.edu-path-detail h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.04em;text-wrap:balance}
+.edu-hero h1{font-size:clamp(2.8rem,5.2vw,5.7rem);line-height:1.12;color:#1b3b30;max-width:14ch}
+.edu-hero h1 em{font-weight:500;font-style:normal;color:#31755a}
+.edu-lead{max-width:57ch;font-size:clamp(1.07rem,1.65vw,1.22rem);line-height:1.8;color:#3e584b;margin:2rem 0 1.5rem}
+.edu-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.edu-button{border:1px solid var(--edu-deep);border-radius:5px;min-height:48px;padding:.7rem 1.3rem;font-size:.93rem;font-weight:700;cursor:pointer}
+.edu-button-primary{background:var(--edu-deep);color:#fff}
+.edu-button-secondary{background:transparent;color:var(--edu-deep)}
+.edu-button:hover{background:#255f49;color:#fff}
+.edu-button:focus-visible,.edu-path-controls button:focus-visible{outline:3px solid #a96a22;outline-offset:3px}
+.edu-disclosure{color:#536b5f;font-size:.82rem;line-height:1.6;margin-top:1.3rem;max-width:57ch}
+.edu-art{position:relative;min-height:450px;display:flex;align-items:flex-end;overflow:hidden;padding:clamp(1.8rem,3.5vw,3rem);color:#f7f4e6;border-radius:6px 95px 6px 6px;background:linear-gradient(140deg,#173e35,#40715b)}
+.edu-art::before{content:"";position:absolute;right:-14%;top:-18%;width:90%;aspect-ratio:1;border-radius:50%;border:1px solid #ffffff60;box-shadow:0 0 0 70px #ffffff08,0 0 0 140px #ffffff0a}
+.edu-art::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(400px circle at 80% 15%,#ffffff1a,transparent 70%)}
+.edu-art p{position:relative;z-index:1;font:500 clamp(2rem,3.5vw,3.7rem)/1.12 Georgia,serif;letter-spacing:-.045em;max-width:16ch}
+.edu-art i{font-style:normal;color:#d3dcb9}
+.edu-art-credit{position:absolute;right:1.5rem;bottom:1rem;font-size:.65rem;letter-spacing:.12em;color:#d8e4cf}
+.edu-paths{max-width:1240px;margin:0 auto;padding:3rem 1.5rem 4.5rem}
+.edu-paths h2{font-size:clamp(2rem,3.5vw,3.3rem)}
+.edu-path-controls{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.6rem 0}
+.edu-path-controls button{border:1px solid #adc3b6;padding:.7rem 1.1rem;border-radius:999px;background:white;color:#1f5745;font-size:.94rem;font-weight:700;cursor:pointer;min-height:44px}
+.edu-path-controls button[aria-pressed=true]{background:var(--edu-deep);color:white}
+.edu-path-detail{display:grid;grid-template-columns:1fr minmax(220px,.37fr);gap:2rem;align-items:center;padding:clamp(1.5rem,3vw,2.8rem);background:#fff;border:1px solid var(--edu-line);border-radius:15px;min-height:180px}
+.edu-path-detail h3{font-size:clamp(1.5rem,2.4vw,2.2rem)}
+.edu-path-detail p{color:#485e51;max-width:72ch;line-height:1.7;margin-top:.8rem}
+.edu-path-detail span{display:block;letter-spacing:.1em;text-transform:uppercase;font-size:.73rem;color:#4a7261;font-weight:700;margin-bottom:.65rem}
+.edu-path-detail strong{font-size:1.06rem;color:var(--edu-deep)}
+.edu-workspace{scroll-margin-top:2rem}
+.edu-footer{background:#123529;color:#e9f2e7;border-color:#305348}
+.edu-footer .text-slate-500{color:#d6e6dc}
+@media(max-width:820px){.edu-hero-grid,.edu-path-detail{grid-template-columns:1fr}.edu-art{min-height:300px}.edu-art p{max-width:none}.edu-paths{padding-top:2rem}}
+@media(prefers-reduced-motion:reduce){.edu-page *{scroll-behavior:auto!important;transition-duration:0.01ms!important}}
