@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - name: Verify full-platform security baseline
+        run: node scripts/verify-platform-security.mjs
       - uses: pnpm/action-setup@v4
         with:
           version: 10.4.1
